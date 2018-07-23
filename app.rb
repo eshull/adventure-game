@@ -14,12 +14,19 @@ end
 
 get('/room/:id') do
   @current_room = Room.find(params[:id].to_i)
+  @exits = []
+  @current_room.exits.each do |frog|
+    @exits.push(frog.nsew)
+  end
   erb(:room)
 end
 
 post('/room/:id') do
   @current_room = Room.find(params[:id].to_i)
-  binding.pry
+  @exits = []
+  @current_room.exits.each do |frog|
+    @exits.push(frog.nsew)
+  end
   erb(:room)
 end
 #

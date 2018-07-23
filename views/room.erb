@@ -1,14 +1,45 @@
 <h1><%= @current_room.title %></h1>
-<p>&nbsp;</p>
-<h3>picture of room goes here</h3>
-<p>&nbsp;</p>
-<h3>description of room goes here <%= @current_room.description %></h3>
-<p>&nbsp;</p>
-<h3>text entry box for room goes here</h3>
-<p>&nbsp;</p>
-
-<h3><%= @current_room.exits[0].nsew %> <%= @current_room.exits[1].nsew %> available exits for room goes here</h3>
+<p></p>
+<img src="/img/<%= @current_room.image %>" height="450px">
+<p></p>
+<h3><%= @current_room.description %></h3>
+<p></p>
+<h3>you see a <%= @current_room.items %> here</h3>
+<p></p>
+<h3>Exits:</h3>
+<% @exits.each do |exity| %>
+    <h3><%= exity %></h3>
+<% end %>
+<p></p>
 <form action="/room/<%= @current_room.id %>" method="post">
   <input type="text" name="player_move" value="">
 <button type="submit" class="btn btn-info" name="button">go</button>
+</form>
+<form action="/room/<%= (@current_room.id + 5) %>" method="post">
+  <% if @exits.include?('n') %>
+  <button type="submit" class="btn btn-info" name="button">north</button>
+  <% else %>
+  <button type="submit" class="btn btn-info" name="button" disabled>north</button>
+  <% end %>
+</form>
+<form action="/room/<%= (@current_room.id - 5) %>" method="post">
+  <% if @exits.include?('s') %>
+  <button type="submit" class="btn btn-info" name="button">south</button>
+  <% else %>
+  <button type="submit" class="btn btn-info" name="button" disabled>south</button>
+  <% end %>
+</form>
+<form action="/room/<%= (@current_room.id - 1) %>" method="post">
+  <% if @exits.include?('w') %>
+  <button type="submit" class="btn btn-info" name="button">west</button>
+  <% else %>
+  <button type="submit" class="btn btn-info" name="button" disabled>west</button>
+  <% end %>
+</form>
+<form action="/room/<%= (@current_room.id + 1) %>" method="post">
+  <% if @exits.include?('e') %>
+  <button type="submit" class="btn btn-info" name="button">east</button>
+  <% else %>
+  <button type="submit" class="btn btn-info" name="button" disabled>east</button>
+  <% end %>
 </form>

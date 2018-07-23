@@ -5,7 +5,7 @@
     Room.create({:title => nil, :description => nil, :items => nil, :image => nil, :xcoord => x, :ycoord => y})
   end
 end
-["n", "s", "e", "w"].each do |dir|
+["north", "south", "east", "west"].each do |dir|
   Exit.create({:nsew => dir})
 end
 room = Room.find(1)
@@ -17,7 +17,9 @@ room.exits << Exit.find_or_create_by(nsew: 'e')
 room = Room.find(3)
 room.exits << Exit.find_or_create_by(nsew: 'n')
 room.exits << Exit.find_or_create_by(nsew: 'w')
+room.exits << Exit.find_or_create_by(nsew: 'e')
 room = Room.find(4)
+room.exits << Exit.find_or_create_by(nsew: 'n')
 room.exits << Exit.find_or_create_by(nsew: 'w')
 room.exits << Exit.find_or_create_by(nsew: 'e')
 room = Room.find(5)
