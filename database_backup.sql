@@ -239,6 +239,8 @@ COPY exits_rooms (exit_id, room_id) FROM stdin;
 4	24
 2	24
 2	25
+1	4
+3	3
 \.
 
 
@@ -247,7 +249,6 @@ COPY exits_rooms (exit_id, room_id) FROM stdin;
 --
 
 COPY rooms (id, xcoord, ycoord, title, description, items, image, exits_id, created_at, updated_at) FROM stdin;
-1	1	1	\N	\N	\N	\N	\N	2018-07-23 18:22:50.688408	2018-07-23 18:22:50.688408
 2	2	1	\N	\N	\N	\N	\N	2018-07-23 18:22:50.690989	2018-07-23 18:22:50.690989
 3	3	1	\N	\N	\N	\N	\N	2018-07-23 18:22:50.692832	2018-07-23 18:22:50.692832
 4	4	1	\N	\N	\N	\N	\N	2018-07-23 18:22:50.694268	2018-07-23 18:22:50.694268
@@ -272,6 +273,7 @@ COPY rooms (id, xcoord, ycoord, title, description, items, image, exits_id, crea
 23	3	5	\N	\N	\N	\N	\N	2018-07-23 18:22:50.719728	2018-07-23 18:22:50.719728
 24	4	5	\N	\N	\N	\N	\N	2018-07-23 18:22:50.720999	2018-07-23 18:22:50.720999
 25	5	5	\N	\N	\N	\N	\N	2018-07-23 18:22:50.722611	2018-07-23 18:22:50.722611
+1	1	1	First room	You are in a Haunted House, find your way out!	blue key	1.png	\N	2018-07-23 18:22:50.688408	2018-07-23 18:22:50.688408
 \.
 
 
