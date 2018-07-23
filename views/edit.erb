@@ -1,0 +1,44 @@
+<h1><%= @store.title %></h1>
+
+<p> </p>
+<form class="" action="/stores/<%= @store.id %>/title" method="post">
+  <label for="updated_title">Update Store Name</label>
+    <input id="updated_title" name="updated_title" class="form-inline" type="text" placeholder="enter updated name">
+    <button type="submit" id="update" class="btn btn-warning">create</button>
+</form>
+
+<p> </p>
+<form class="" action="/stores/<%= @store.id %>/brand/new" method="post">
+  <label for="new_brand">Create a Brand</label>
+    <input id="new_brand" name="new_brand" class="form-inline" type="text" placeholder="enter name">
+    <input id="new_price" name="new_price" class="form-inline" type="number" placeholder="enter price as number">
+    <button type="submit" id="update" class="btn btn-warning">create</button>
+</form>
+
+<p> </p>
+<form action="/stores/<%= @store.id %>/brand" method="post">
+  <select id="brands_drop" name="brands_drop">
+    <%if @all_brands == nil%>
+      <option value="" disabled selected>no brands yet</option>
+    <% else %>
+      <% @all_brands.each do |brand| %>
+        <option value = "<%= brand.name %>" > <%= brand.name %> </option>
+      <% end %>
+    <% end %>
+  </select>
+  <button type="submit" id="update" class="btn btn-warning">add</button>
+</form>
+
+<p> </p>
+<% if @store.brands == [] %>
+  <h3>There are no brands associated with this store</h3>
+<% else %>
+  <% @store.brands.each do |included|%>
+    <h3> <%= included.name %> &nbsp; $<%= included.price %></h3>
+  <% end %>
+<% end %>
+
+<p>&nbsp;</p>
+<form class="form-inline" action="/" method="get">
+  <button type="submit" class="btn btn-primary">Back</button>
+</form>

@@ -1,0 +1,14 @@
+<h1><%= @current_room.title %></h1>
+<p>&nbsp;</p>
+<h3>picture of room goes here</h3>
+<p>&nbsp;</p>
+<h3>description of room goes here <%= @current_room.description %></h3>
+<p>&nbsp;</p>
+<h3>text entry box for room goes here</h3>
+<p>&nbsp;</p>
+
+<h3><%= @current_room.exits[0].nsew %> <%= @current_room.exits[1].nsew %> available exits for room goes here</h3>
+<form action="/room/<%= @current_room.id %>" method="post">
+  <input type="text" name="player_move" value="">
+<button type="submit" class="btn btn-info" name="button">go</button>
+</form>
