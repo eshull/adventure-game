@@ -2,6 +2,21 @@ body {
   background-color: #1a0a38;
 }
 
+h4 {
+  font-size: 37px;
+  /*color: white;*/
+  margin: 15px;
+}
+.scroll {
+  padding: 20px;
+  background-color: white;
+}
+
+.scroll p {
+  max-height: 300px;
+  overflow: scroll;
+}
+
 .direction {
   position: fixed;
   right: 100px;
@@ -42,12 +57,17 @@ button {
   border-style: solid;
   border-width: medium;
   border-color: white;
+  margin-left: 20px;
 }
 
 h6 {
   font-size: 20px;
   color: white;
   letter-spacing: 3px;
+}
+
+input {
+  height: 36px;
 }
 
 :disabled {
