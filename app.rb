@@ -32,6 +32,7 @@ get('/room/:id') do
   @current_room.exits.each do |frog|
     @exits.push(frog.nsew)
   end
+  @room_items = Artifact.where(:room_id => params[:id].to_i)
   erb(:room)
 end
 
@@ -46,6 +47,7 @@ post('/room/:id') do
   else
     @player_move = params["player_move"].split(' ')
     Artifact.unhide(@player_move)
+    Artifact.unlock_door(@current_room, @player_move)
   end
   erb(:room)
 end

@@ -41,7 +41,6 @@ class Play  < ActiveRecord::Base
     room = Room.find_by(title: 'Cluttered Hallway')
     room.exits << Exit.find_or_create_by(nsew: 'north')
     room.exits << Exit.find_or_create_by(nsew: 'west')
-    room.exits << Exit.find_or_create_by(nsew: 'east')
     room = Room.find_by(title: 'Pantry')
     room.exits << Exit.find_or_create_by(nsew: 'north')
     room.exits << Exit.find_or_create_by(nsew: 'west')
@@ -105,17 +104,23 @@ class Play  < ActiveRecord::Base
     room.exits << Exit.find_or_create_by(nsew: 'south')
     room = Room.find_by(title: 'Foyer')
     room.exits << Exit.find_or_create_by(nsew: 'south')
-    Artifact.create({:room_id => 10, :portable => false, :hidden => false, :obscures => true, :name => 'desk', :purpose => 'key', :unlock => 'look, search, check, inspect, open', :description => 'a dusty desk covered in paperwork and stationery.'})
-    Artifact.create({:room_id => 10, :portable => true, :hidden => true, :obscures => false, :name => 'key', :purpose => 'open door in room 23', :unlock => 'use, turn, insert', :description => 'a plain grey skeleton key'})
-    Artifact.create({:room_id => 2, :portable => true, :hidden => false, :obscures => false, :name => 'map', :purpose => 'waste of time', :unlock => nil, :description => 'a mildly tattered copy of the 1978 Shell Oil Roadmap of Florida. Probably not so helpful. Good luck folding it back up.'})
-    Artifact.create({:room_id => 5, :portable => true, :hidden => false, :obscures => true, :name => 'knife', :purpose => nil, :unlock => nil, :description => 'A well used carving knife. Be careful not to hurt yourself with this.'})
-    Artifact.create({:room_id => 11, :portable => true, :hidden => true, :obscures => false, :name => 'penny', :purpose => 'troll', :unlock => nil, :description => 'a tarnished old penny'})
-    Artifact.create({:room_id => 11, :portable => false, :hidden => false, :obscures => true, :name => 'well', :purpose => 'penny', :unlock => 'look, search, check, inspect, open', :description => 'a very old well, now mostly filled with trash.'})
-    Artifact.create({:room_id => 15, :portable => false, :hidden => false, :obscures => false, :name => 'book', :purpose => 'waste of time', :unlock => nil, :description => 'A copy of the 1923 reprint of the wildly successful Esperanto verion of Wuthering Heights. It\'s open to the section of the story where young Werther and Oscar Wilde decide to build the first flying machine together, but decide to do that later- after they elope.'})
-    Artifact.create({:room_id => 25, :portable => false, :hidden => false, :obscures => true, :name => 'jacket', :purpose => 'dagger', :unlock => 'search, check, inspect, open', :description => 'a nicely made suede jacket.'})
-    Artifact.create({:room_id => 25, :portable => true, :hidden => true, :obscures => false, :name => 'dagger', :purpose => 'undecided', :unlock => nil, :description => 'a shiny silver dagger. This looks like trouble.'})
-    Artifact.create({:room_id => 12, :portable => true, :hidden => false, :obscures => false, :name => 'paw', :purpose => nil, :unlock => nil, :description => 'a gnarled old monkey\'s paw. You\'re pretty sure making a wish on this is a bad idea.'})
-    Artifact.create({:room_id => 18, :portable => false, :hidden => false, :obscures => false, :name => 'safe', :purpose => 'full of treasure', :unlock => '3, 1, 4', :description => 'a wall safe'})
-    Artifact.create({:room_id => 8, :portable => false, :hidden => false, :obscures => false, :name => 'chest', :purpose => 'waste of time', :unlock => nil, :description => 'a locked chest. I wonder what is inside?'})
+    Artifact.create({:room_id => nil, :portable => false, :hidden => false, :obscures => true, :name => 'desk', :origin => 'Study', :purpose => 'key', :unlock => 'look, search, check, inspect, open', :description => 'a dusty desk covered in paperwork and stationery.'})
+    Artifact.create({:room_id => nil, :portable => true, :hidden => true, :obscures => false, :name => 'key', :origin => 'Bedroom', :purpose => 'Bedroom', :unlock => 'use, turn, insert', :description => 'a plain grey skeleton key'})
+    Artifact.create({:room_id => nil, :portable => true, :hidden => false, :obscures => false, :name => 'map', :origin => 'Wine Cellar', :purpose => 'waste of time', :unlock => nil, :description => 'a mildly tattered copy of the 1978 Shell Oil Roadmap of Florida. Probably not so helpful. Good luck folding it back up.'})
+    Artifact.create({:room_id => nil, :portable => true, :hidden => false, :obscures => true, :name => 'knife', :origin => 'Kitchen', :purpose => 'undecided', :unlock => nil, :description => 'A well used carving knife. Be careful not to hurt yourself with this.'})
+    Artifact.create({:room_id => nil, :portable => true, :hidden => true, :obscures => false, :name => 'penny', :origin => 'Old Well', :purpose => 'troll', :unlock => nil, :description => 'a tarnished old penny'})
+    Artifact.create({:room_id => nil, :portable => false, :hidden => false, :obscures => true, :name => 'well', :origin => 'Old Well', :purpose => 'penny', :unlock => 'look, search, check, inspect, open', :description => 'a very old well, now mostly filled with trash.'})
+    Artifact.create({:room_id => nil, :portable => false, :hidden => false, :obscures => false, :name => 'book', :origin => 'Study', :purpose => 'undecided', :unlock => nil, :description => 'A copy of the 1923 reprint of the wildly successful Esperanto verion of Wuthering Heights. It\'s open to the section of the story where young Werther and Oscar Wilde decide to build the first flying machine together, but decide to do that later- after they elope.'})
+    Artifact.create({:room_id => nil, :portable => false, :hidden => false, :obscures => true, :name => 'jacket', :origin => 'Foyer', :purpose => 'dagger', :unlock => 'search, check, inspect, open', :description => 'a nicely made suede jacket.'})
+    Artifact.create({:room_id => nil, :portable => true, :hidden => true, :obscures => false, :name => 'dagger', :origin => 'Foyer', :purpose => 'foyer', :unlock => nil, :description => 'a shiny silver dagger. This looks like trouble.'})
+    Artifact.create({:room_id => nil, :portable => true, :hidden => false, :obscures => false, :name => 'paw', :origin => 'Attic Staircase', :purpose => 'undecided', :unlock => nil, :description => 'a gnarled old monkey\'s paw. You\'re pretty sure making a wish on this is a bad idea.'})
+    Artifact.create({:room_id => nil, :portable => false, :hidden => false, :obscures => false, :name => 'safe', :origin => 'Closet Under Stairs', :purpose => 'full of treasure', :unlock => '3, 1, 4', :description => 'a wall safe'})
+    Artifact.create({:room_id => nil, :portable => false, :hidden => false, :obscures => false, :name => 'chest', :origin => 'Closet', :purpose => 'waste of time', :unlock => nil, :description => 'a locked chest. I wonder what is inside?'})
+    artifact_room_id_update = Artifact.all
+    artifact_room_id_update.each do |artifact|
+      room_name = artifact.origin
+      room_object = Room.find_by(title: room_name)
+      artifact.update(room_id: room_object.id )
+    end
   end
 end
