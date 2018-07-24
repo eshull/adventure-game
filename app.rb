@@ -26,7 +26,6 @@ end
 
 post('/room/:id') do
   @current_room = Room.find(params[:id].to_i)
-
   @exits = []
   @current_room.exits.each do |frog|
     @exits.push(frog.nsew)
