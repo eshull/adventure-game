@@ -23,28 +23,28 @@
 <button type="submit" class="btn btn-info" name="button">go</button>
 </form>
 <form action="/room/<%= (@current_room.id + 5) %>" method="post">
-  <% if @exits.include?('n') %>
+  <% if @exits.include?('north') %>
   <button type="submit" class="btn btn-info" name="button">north</button>
   <% else %>
   <button type="submit" class="btn btn-info" name="button" disabled>north</button>
   <% end %>
 </form>
 <form action="/room/<%= (@current_room.id - 5) %>" method="post">
-  <% if @exits.include?('s') %>
+  <% if @exits.include?('south') %>
   <button type="submit" class="btn btn-info" name="button">south</button>
   <% else %>
   <button type="submit" class="btn btn-info" name="button" disabled>south</button>
   <% end %>
 </form>
 <form action="/room/<%= (@current_room.id - 1) %>" method="post">
-  <% if @exits.include?('w') %>
+  <% if @exits.include?('west') %>
   <button type="submit" class="btn btn-info" name="button">west</button>
   <% else %>
   <button type="submit" class="btn btn-info" name="button" disabled>west</button>
   <% end %>
 </form>
 <form action="/room/<%= (@current_room.id + 1) %>" method="post">
-  <% if @exits.include?('e') %>
+  <% if @exits.include?('east') %>
   <button type="submit" class="btn btn-info" name="button">east</button>
   <% else %>
   <button type="submit" class="btn btn-info" name="button" disabled>east</button>
