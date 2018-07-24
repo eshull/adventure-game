@@ -4,17 +4,21 @@ body {
 
 h4 {
   font-size: 37px;
-  /*color: white;*/
   margin: 15px;
 }
 .scroll {
   padding: 20px;
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 
 .scroll p {
   max-height: 300px;
   overflow: scroll;
+  font-family: "litania";
+  font-size: 30px;
+  color: white;
+  letter-spacing: 2px;
 }
 
 .direction {
