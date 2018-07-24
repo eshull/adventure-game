@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_23_180445) do
+ActiveRecord::Schema.define(version: 2018_07_24_063601) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "artifacts", force: :cascade do |t|
+    t.bigint "room_id"
+    t.boolean "hidden"
+    t.boolean "obscures"
+    t.string "name"
+    t.string "purpose"
+    t.string "unlock"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["room_id"], name: "index_artifacts_on_room_id"
+  end
 
   create_table "exits", force: :cascade do |t|
     t.string "nsew"

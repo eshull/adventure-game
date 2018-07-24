@@ -4,7 +4,14 @@
 <p></p>
 <h3><%= @current_room.description %></h3>
 <p></p>
-<h3>you see a <%= @current_room.items %> here</h3>
+<% if @room_items == nil %>
+<% else %>
+  <% @room_items.each do |display| %>
+    <% if display.hidden == false %>
+      <h3>you see a <%= display.name %> here</h3>
+    <% end %>
+  <% end %>
+<% end %>
 <p></p>
 <h3>Exits:</h3>
 <% @exits.each do |exity| %>
