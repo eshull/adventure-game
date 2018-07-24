@@ -10,7 +10,6 @@ class Artifact < ActiveRecord::Base
       if @inspect_item.unlock.include?(word1)
         @update_item = Artifact.find(@inspect_item.purpose.to_i)
         @update_item.update(:hidden => false)
-              binding.pry
       end
     end
   end
