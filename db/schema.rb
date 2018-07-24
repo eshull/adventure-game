@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_24_063601) do
+ActiveRecord::Schema.define(version: 2018_07_24_190726) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2018_07_24_063601) do
     t.string "purpose"
     t.string "unlock"
     t.string "description"
+    t.boolean "portable"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["room_id"], name: "index_artifacts_on_room_id"
