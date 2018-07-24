@@ -2,9 +2,19 @@ body {
   background-color: #1a0a38;
 }
 
+h3 {
+    color: white;
+    font-family: "litania";
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 39px;
+}
+
 h4 {
   font-size: 37px;
   margin: 15px;
+  font-family: "litania";
+  letter-spacing: 2px;
 }
 .scroll {
   padding: 20px;
@@ -15,10 +25,10 @@ h4 {
 .scroll p {
   max-height: 300px;
   overflow: scroll;
-  font-family: "litania";
-  font-size: 30px;
+  font-family: serif;
+  font-size: 20px;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .direction {
