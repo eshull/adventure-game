@@ -1,0 +1,55 @@
+body {
+  background-color: #1a0a38;
+}
+
+.direction {
+  position: fixed;
+  right: 100px;
+  bottom: 85px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle {
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: center;
+  margin: 15px;
+}
+
+#north {
+  align-self: center;
+}
+
+#south {
+  align-self: center;
+}
+
+#east {
+  margin-left: 10px;
+}
+
+#west {
+  margin-right: 10px;
+}
+
+button {
+  width: 120px;
+  height: 50px;
+  background-color: black;
+  border-style: solid;
+  border-width: medium;
+  border-color: white;
+}
+
+h6 {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+:disabled {
+  opacity: .4;
+}
