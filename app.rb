@@ -7,6 +7,7 @@ require('./lib/exit')
 require('./lib/player')
 require('./lib/artifact')
 require('./lib/creature')
+require('./lib/play')
 require("pg")
 require("pry")
 
@@ -14,6 +15,16 @@ get('/') do
   # @stores_list = Store.all
   erb(:index)
 end
+
+post ('/') do
+  game = Play.game()
+  @room_list = Room.all
+  @room_id = @room_list.first.id
+  redirect "/room/#{@room_id}"
+end
+
+
+
 
 get('/room/:id') do
   @current_room = Room.find(params[:id].to_i)
