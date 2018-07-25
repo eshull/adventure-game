@@ -65,8 +65,8 @@ post('/room/:id') do
     Artifact.unhide(@current_room, @player_move)
     Artifact.unlock_door(@current_room, @player_move)
     Artifact.pick_up(@current_room, @player_move)
+    Creature.turn(@current_room, @player_move)
   end
-
   @exits = []
   @current_room.exits.each do |frog|
     @exits.push(frog.nsew)

@@ -6,7 +6,7 @@ class Play  < ActiveRecord::Base
     Event.delete_all
     Room.create({:title => "Dark Basement", :description => "A large, cluttered, and dark space filled with crates and old furniture covered in sheets. There is a broken spot in the wall to the North. Exits are North and East.", :items => nil, :image => '1.svg', :xcoord => 1, :ycoord => 1})
     Room.create({:title => "Wine Cellar", :description => "This room has several large barrels and a few wine racks in it. Exits East and West.", :items => nil, :image => '2.svg', :xcoord => 2, :ycoord => 1})
-    Room.create({:title => "Cluttered Hallway", :description => "A passage that leads toward a lighted area. There is a small door to the North. Exits are North and West. THE TROLL WILL GO HERE, BLOCKING THE DOOR EAST, ONCE WE IMPLEMENT", :items => nil, :image => '3.svg', :xcoord => 3, :ycoord => 1})
+    Room.create({:title => "Cluttered Hallway", :description => "A passage that leads toward a lighted area. There is a small door to the North. Exits are North and West.", :items => nil, :image => '3.svg', :xcoord => 3, :ycoord => 1})
     Room.create({:title => "Pantry", :description => "A disused pantry filled with long-spoiled supplies and kitchen wares. Exits North, West, and East.", :items => nil, :image => '4.svg', :xcoord => 4, :ycoord => 1})
     Room.create({:title => "Kitchen", :description => "This kitchen appears to have been abandoned in the middle of dinner preparation- various dishes and implements still lie where they were set, the oven door hangs open. Exit is to the West.", :items => nil, :image => '5.svg', :xcoord => 5, :ycoord => 1})
     Room.create({:title => "Unfinished Area", :description => "The hole in the wall leads to an unfinished space below the house. You're getting dirty crawling around in here. There is a hole in the ground to the East. Exits are North, South, East.", :items => nil, :image => '6.svg', :xcoord => 1, :ycoord => 2})
@@ -125,10 +125,10 @@ class Play  < ActiveRecord::Base
       artifact.update(room_id: room_object.id )
     end
     troll_room_id_update = Room.find_by(title: 'Cluttered Hallway')
-    oldman_room_id_update = Room.find_by(title: 'Cave')
+    grandpa_room_id_update = Room.find_by(title: 'Cave')
     ghost_room_id_update = Room.find_by(title: 'Kitchen')
     Creature.create({:room_id => troll_room_id_update.id, :name => 'Troll', :image => 'troll.svg'})
-    Creature.create({:room_id => oldman_room_id_update.id, :name => 'Old Man', :image => 'oldman.svg'})
+    Creature.create({:room_id => grandpa_room_id_update.id, :name => 'Grandpa', :image => 'grandpa.svg'})
     Creature.create({:room_id => ghost_room_id_update.id, :name => 'Ghost', :image => 'ghost.svg'})
   end
 end
