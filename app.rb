@@ -8,6 +8,7 @@ require('./lib/player')
 require('./lib/artifact')
 require('./lib/creature')
 require('./lib/play')
+require('./lib/event')
 require("pg")
 require("pry")
 
@@ -23,9 +24,6 @@ post ('/') do
   redirect "/room/#{@room_id}"
 end
 
-
-
-
 get('/room/:id') do
   @current_room = Room.find(params[:id].to_i)
   @exits = []
@@ -33,21 +31,55 @@ get('/room/:id') do
     @exits.push(frog.nsew)
   end
   @room_items = Artifact.where(:room_id => params[:id].to_i)
+  Event.create({:room_id => @current_room.id, :entry => @current_room.description})
+  if @room_items == nil
+  else
+    @room_items.each do |display|
+      if display.hidden == false
+          Event.create({:room_id => @current_room.id, :entry => "you see a #{display.name} here"})
+      end
+    end
+  end
+  if @exits.length == 1
+    Event.create({:room_id => @current_room.id, :entry => "Exit is to the #{@exits[0]}"})
+  else
+    Event.create({:room_id => @current_room.id, :entry => "Exits are to the #{@exits.join(', ')}"})
+  end
+  @events = Event.all()
   erb(:room)
 end
 
 post('/room/:id') do
   @current_room = Room.find(params[:id].to_i)
-  @exits = []
-  @current_room.exits.each do |frog|
-    @exits.push(frog.nsew)
-  end
-  @room_items = Artifact.where(:room_id => params[:id].to_i)
   if params["player_move"] == nil
   else
     @player_move = params["player_move"].split(' ')
     Artifact.unhide(@player_move)
     Artifact.unlock_door(@current_room, @player_move)
   end
+
+  @exits = []
+  @current_room.exits.each do |frog|
+    @exits.push(frog.nsew)
+  end
+
+  @room_items = Artifact.where(:room_id => params[:id].to_i)
+  Event.create({:room_id => @current_room.id, :entry => @current_room.description})
+
+  if @room_items == nil
+  else
+    @room_items.each do |display|
+      if display.hidden == false
+          Event.create({:room_id => @current_room.id, :entry => "you see a #{display.name} here"})
+      end
+    end
+  end
+
+  if @exits.length == 1
+    Event.create({:room_id => @current_room.id, :entry => "Exit is to the #{@exits[0]}"})
+  else
+    Event.create({:room_id => @current_room.id, :entry => "Exits are to the #{@exits.join(', ')}"})
+  end
+  @events = Event.all()
   erb(:room)
 end

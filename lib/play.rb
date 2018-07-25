@@ -3,12 +3,13 @@ class Play  < ActiveRecord::Base
     Artifact.delete_all
     Room.delete_all
     Exit.delete_all
-    Room.create({:title => "Dark Basement", :description => "A large, cluttered, and dark space filled with crates and old furniture covered in sheets. There is a door to the East and a broken spot in the wall to the North.", :items => nil, :image => '1.svg', :xcoord => 1, :ycoord => 1})
+    Event.delete_all
+    Room.create({:title => "Dark Basement", :description => "A large, cluttered, and dark space filled with crates and old furniture covered in sheets. There is a broken spot in the wall to the North. Exits are North and East.", :items => nil, :image => '1.svg', :xcoord => 1, :ycoord => 1})
     Room.create({:title => "Wine Cellar", :description => "This room has several large barrels and a few wine racks in it. Exits East and West.", :items => nil, :image => '2.svg', :xcoord => 2, :ycoord => 1})
-    Room.create({:title => "Cluttered Hallway", :description => "A passage that leads toward a lighted area. There is a door to the East and a small door to the North.", :items => nil, :image => '3.svg', :xcoord => 3, :ycoord => 1})
+    Room.create({:title => "Cluttered Hallway", :description => "A passage that leads toward a lighted area. There is a small door to the North. Exits are North and West. THE TROLL WILL GO HERE, BLOCKING THE DOOR EAST, ONCE WE IMPLEMENT", :items => nil, :image => '3.svg', :xcoord => 3, :ycoord => 1})
     Room.create({:title => "Pantry", :description => "A disused pantry filled with long-spoiled supplies and kitchen wares. Exits North, West, and East.", :items => nil, :image => '4.svg', :xcoord => 4, :ycoord => 1})
     Room.create({:title => "Kitchen", :description => "This kitchen appears to have been abandoned in the middle of dinner preparation- various dishes and implements still lie where they were set, the oven door hangs open. Exit is to the West.", :items => nil, :image => '5.svg', :xcoord => 5, :ycoord => 1})
-    Room.create({:title => "Unfinished Area", :description => "The hole in the wall leads to an unfinished space below the house. You're getting dirty crawling around in here. There is a hole in the gorund to the East, a passageway leads North.", :items => nil, :image => '6.svg', :xcoord => 1, :ycoord => 2})
+    Room.create({:title => "Unfinished Area", :description => "The hole in the wall leads to an unfinished space below the house. You're getting dirty crawling around in here. There is a hole in the ground to the East. Exits are North, South, East.", :items => nil, :image => '6.svg', :xcoord => 1, :ycoord => 2})
     Room.create({:title => "Cave", :description => "The hole leads to a small residence. You can barely sit up in this space. Exit is to the West.", :items => nil, :image => '7.svg', :xcoord => 2, :ycoord => 2})
     Room.create({:title => "Closet", :description => "The small door leads to this closet space, in the corner is a small ornate locked chest. Exit is to the South.", :items => nil, :image => '8.svg', :xcoord => 3, :ycoord => 2})
     Room.create({:title => "Dining Room", :description => "The table is set for a grand meal. Someone's place setting has been disturbed. You wonder what was for dinner. Exits are to the North, South, and East.", :items => nil, :image => '9.svg', :xcoord => 4, :ycoord => 2})
@@ -28,6 +29,7 @@ class Play  < ActiveRecord::Base
     Room.create({:title => "Bathroom", :description => "There's a bowling ball in the toilet. Other than that, this seems like a normal turn-of-the-century bathroom. The medicine cabinet door is hanging open. Exits are West and East.", :items => nil, :image => '23.svg', :xcoord => 3, :ycoord => 5})
     Room.create({:title => "Bedroom", :description => "This guest bedroom is painted with bloodstains. Whoever did it left the paintbrush behind as well. They did a pretty poor job of making the stains- you were not fooled for a second. Exits are West and South.", :items => nil, :image => '24.svg', :xcoord => 4, :ycoord => 5})
     Room.create({:title => "Foyer", :description => "The foyer is cluttered with debris- you can't get anywhere near the door, so, there's no way out of the house here. There's an old suede jacket on a hook. Exit is to the South.", :items => nil, :image => '25.svg', :xcoord => 5, :ycoord => 5})
+    Room.create({:title => "player", :description => "This is the player object. If you are viewing this, stop being naughty, Nick. This exists only so objects can be added to the inventory of the player.", :items => nil, :image => nil, :xcoord => nil, :ycoord => nil})
     Exit.create({:nsew => 'north'})
     Exit.create({:nsew => 'south'})
     Exit.create({:nsew => 'west'})
