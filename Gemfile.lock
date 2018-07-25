@@ -72,6 +72,8 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    shoulda-matchers (2.8.0)
+      activesupport (>= 3.0.0)
     sinatra (2.0.3)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -104,6 +106,7 @@ DEPENDENCIES
   pg
   rake
   rspec
+  shoulda-matchers (~> 2.0)
   sinatra
   sinatra-activerecord
   sinatra-contrib
