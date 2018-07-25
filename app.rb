@@ -54,8 +54,9 @@ post('/room/:id') do
   if params["player_move"] == nil
   else
     @player_move = params["player_move"].split(' ')
-    Artifact.unhide(@player_move)
+    Artifact.unhide(@current_room, @player_move)
     Artifact.unlock_door(@current_room, @player_move)
+    Artifact.pick_up(@current_room, @player_move)
   end
 
   @exits = []

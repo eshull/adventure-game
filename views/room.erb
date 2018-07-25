@@ -6,7 +6,7 @@
 <div class="scroll" style="height:420px;width:750px;border:1px solid #ccc;font:22px/28px Litana, Litana, Serif;overflow:auto;">
   <% if @events == nil %>
   <% else %>
-    <% @events.each do |list| %>
+    <% @events.last(6).each do |list| %>
       -<%= list.entry %><br>
     <% end %>
   <% end %>
