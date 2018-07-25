@@ -1,3 +1,7 @@
+style="height:420px;width:750px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"
+
+
+
 1 |      1 |      1 | Dark Basement       | A large, cluttered, and dark space filled with crates and old furniture covered in sheets. There is a door to the East and a broken spot in the wall to the North.                                                                                                                                                                  |       | 1.svg  |          | 2018-07-24 18:51:06.38433  | 2018-07-24 18:51:06.38433
 2 |      2 |      1 | Wine Cellar         | This room has several large barrels and a few wine racks in it. Exits East and West.                                                                                                                                                                                                                                                |       | 2.svg  |          | 2018-07-24 18:51:06.387041 | 2018-07-24 18:51:06.387041
 3 |      3 |      1 | Cluttered Hallway   | A passage that leads toward a lighted area. There is a door to the East and a small door to the North.                                                                                                                                                                                                                              |       | 3.svg  |          | 2018-07-24 18:51:06.388696 | 2018-07-24 18:51:06.388696
