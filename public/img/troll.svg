@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="a" x1="10.75" y1="49.95" x2="10.75" y2="57.93" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#717171"/>
+      <stop offset="0.02" stop-color="#838383"/>
+      <stop offset="0.09" stop-color="#aaa"/>
+      <stop offset="0.15" stop-color="#c9c9c9"/>
+      <stop offset="0.21" stop-color="#dfdfdf"/>
+      <stop offset="0.27" stop-color="#ececec"/>
+      <stop offset="0.32" stop-color="#f1f1f1"/>
+      <stop offset="0.39" stop-color="#ddd"/>
+      <stop offset="0.65" stop-color="#9a9a9a"/>
+      <stop offset="0.77" stop-color="gray"/>
+      <stop offset="0.92" stop-color="#4a4a4a"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="b" x1="7.53" y1="47.76" x2="7.53" y2="60.15" xlink:href="#a"/>
+    <linearGradient id="c" x1="13.2" y1="53.95" x2="10.06" y2="53.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#717171" stop-opacity="0"/>
+      <stop offset="0.26" stop-color="#6a6a6a" stop-opacity="0.11"/>
+      <stop offset="0.59" stop-color="#575757" stop-opacity="0.42"/>
+      <stop offset="0.95" stop-color="#383838" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="d" x1="2560.15" y1="49.95" x2="2560.15" y2="57.93" gradientTransform="matrix(-1, 0, 0, 1, 2648.5, 0)" xlink:href="#a"/>
+    <linearGradient id="e" x1="2557.03" y1="47.76" x2="2557.03" y2="60.15" gradientTransform="matrix(-1, 0, 0, 1, 2648.5, 0)" xlink:href="#a"/>
+    <linearGradient id="f" x1="2562.7" y1="53.95" x2="2559.56" y2="53.95" gradientTransform="matrix(-1, 0, 0, 1, 2648.5, 0)" xlink:href="#c"/>
+    <radialGradient id="g" cx="46.56" cy="36.81" r="58.28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bde4bb"/>
+      <stop offset="0.27" stop-color="#bbe2b9"/>
+      <stop offset="0.43" stop-color="#b2dab0"/>
+      <stop offset="0.55" stop-color="#a4cca2"/>
+      <stop offset="0.67" stop-color="#90b88e"/>
+      <stop offset="0.77" stop-color="#779f75"/>
+      <stop offset="0.86" stop-color="#578055"/>
+      <stop offset="0.95" stop-color="#325b30"/>
+      <stop offset="1" stop-color="#184216"/>
+    </radialGradient>
+    <radialGradient id="h" cx="31.88" cy="40.57" r="52.55" xlink:href="#g"/>
+    <radialGradient id="i" cx="49.66" cy="45.39" r="26.54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3d6137"/>
+      <stop offset="0.22" stop-color="#365832"/>
+      <stop offset="0.57" stop-color="#224023"/>
+      <stop offset="1" stop-color="#041a0d"/>
+    </radialGradient>
+    <radialGradient id="j" cx="2593.96" cy="-21.62" r="26.64" gradientTransform="translate(2644.59 23.51) rotate(180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3d6137"/>
+      <stop offset="0.39" stop-color="#224023"/>
+      <stop offset="0.77" stop-color="#0c2413"/>
+      <stop offset="1" stop-color="#041a0d"/>
+    </radialGradient>
+    <radialGradient id="k" cx="50.98" cy="91.74" r="35.39" gradientTransform="translate(0 78.28) scale(1 0.15)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <title>creatures</title>
+  <g style="isolation: isolate">
+    <g>
+      <g>
+        <rect x="6.78" y="50.04" width="7.95" height="7.83" style="fill: url(#a)"/>
+        <rect x="5" y="47.76" width="5.06" height="12.39" style="fill: url(#b)"/>
+        <rect x="10.06" y="50.04" width="3.26" height="7.83" style="opacity: 0.5;fill: url(#c)"/>
+      </g>
+      <g>
+        <rect x="84.48" y="50.04" width="7.74" height="7.83" style="fill: url(#d)"/>
+        <rect x="88.94" y="47.76" width="5.06" height="12.39" style="fill: url(#e)"/>
+        <rect x="85.68" y="50.04" width="3.26" height="7.83" style="opacity: 0.5;fill: url(#f)"/>
+      </g>
+      <g>
+        <path d="M49.6,4.48A34.88,34.88,0,0,0,14.73,39.36V85.95A11.73,11.73,0,0,0,26,74.23a11.74,11.74,0,1,0,23.47,0,11.74,11.74,0,1,0,23.47,0A11.73,11.73,0,0,0,84.48,86V39.36A34.88,34.88,0,0,0,49.6,4.48Z" style="opacity: 0.8;fill: url(#g)"/>
+        <path d="M49.6,4.48A34.88,34.88,0,0,0,14.73,39.36V85.95A11.73,11.73,0,0,0,26,74.23a11.74,11.74,0,1,0,23.47,0,11.74,11.74,0,1,0,23.47,0A11.73,11.73,0,0,0,84.48,86V39.36A34.88,34.88,0,0,0,49.6,4.48Z" style="opacity: 0.8;mix-blend-mode: multiply;fill: url(#h)"/>
+      </g>
+      <g>
+        <path d="M56.84,39.88s4.18,5.88,13,1.92,1.85-13.11,1.85-13.11Z" style="fill: #233726"/>
+        <g>
+          <path d="M43.8,39.88s-4.18,5.88-13,1.92S29,28.69,29,28.69Z" style="fill: #233726"/>
+          <path d="M29.26,28.34,43.88,39.88s-4.74,4.27-12.64.87S29.26,28.34,29.26,28.34Zm42.19,0L56.84,39.88s4.74,4.27,12.64.87S71.45,28.34,71.45,28.34Z" style="fill: url(#i)"/>
+        </g>
+      </g>
+      <path d="M28.29,59.68s.58,2,7.79-2.17c6.15-3.52,23.35-3.38,27.33-1.05S70.15,61.31,74,58.7c0,0-8-8-22.71-8S28.6,56.83,28.29,59.68Z" style="fill: #233726"/>
+      <path d="M27,59.14c5.19,3,4.68-2.91,14-5S54,53,60.89,54.4,69.42,61,73.45,59.06s0-12.64-20-12.64H47.3S36,45.71,30.86,50.13,24.74,58.18,27,59.14Z" style="fill: url(#j)"/>
+      <g>
+        <polygon points="58.8 29.53 53.9 26.72 51.37 29.13 47.43 26.7 39.08 29.02 33.67 25.73 27.37 25.73 24.54 22.06 19.88 21.14 20.38 20.32 25.25 21.36 27.98 24.91 34.04 24.91 39.28 28.09 47.63 25.78 51.2 27.97 53.71 25.58 58.78 28.5 67.83 23.14 78.26 23.97 78.27 19.8 79.33 20.98 79.33 24.88 68.15 23.99 58.8 29.53" style="fill: #004223"/>
+        <path d="M20.37,20.32c1.61.21,3.21.46,4.81.7h.07l.05.06c1,1.16,2,2.31,2.93,3.49L28,24.46l5.88-.27H34l.12.07c1.8,1,3.6,2.08,5.37,3.16L39,27.35,47.37,25l.25-.07.23.14,3.76,2.29-.76.08L53.39,25l.33-.31.38.22,5,2.9H58.5l4.62-2.69,4.65-2.64.13-.07H68q5.08.57,10.15,1.23l-.17.15c.07-1.32.16-2.65.25-4,0,1.33,0,2.65.05,4V24h-.17q-5.11-.29-10.2-.7l.25-.06-4.55,2.82-4.58,2.76L58.8,29l-.29-.16L53.5,26l.71-.09-2.5,2.42-.35.34L51,28.41l-3.74-2.33.47.07L39.32,28.4l-.23.06-.2-.12c-1.77-1.08-3.53-2.2-5.28-3.31l.25.07-5.89,0H27.8L27.7,25c-.92-1.2-1.81-2.44-2.72-3.65l.12.07C23.53,21.07,21.95,20.71,20.37,20.32Z" style="fill: #006937"/>
+      </g>
+      <ellipse cx="50.98" cy="91.74" rx="36.83" ry="6.26" style="opacity: 0.2;mix-blend-mode: multiply;fill: url(#k)"/>
+    </g>
+  </g>
+</svg>

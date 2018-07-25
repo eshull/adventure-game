@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="a" cx="51.98" cy="91.74" r="35.39" gradientTransform="translate(0 78.28) scale(1 0.15)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="49.45" cy="36.07" r="57.81" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#feeee7"/>
+      <stop offset="0.3" stop-color="#feede5"/>
+      <stop offset="0.48" stop-color="#fee8dc"/>
+      <stop offset="0.62" stop-color="#fde1ce"/>
+      <stop offset="0.74" stop-color="#fdd7ba"/>
+      <stop offset="0.86" stop-color="#fccaa1"/>
+      <stop offset="0.96" stop-color="#fbb981"/>
+      <stop offset="1" stop-color="#fbb273"/>
+    </radialGradient>
+    <radialGradient id="c" cx="34.9" cy="39.8" r="52.13" xlink:href="#b"/>
+    <radialGradient id="d" cx="30.13" cy="89.83" r="17.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8c6239"/>
+      <stop offset="0.35" stop-color="#8a6037"/>
+      <stop offset="0.55" stop-color="#815932"/>
+      <stop offset="0.71" stop-color="#734c2a"/>
+      <stop offset="0.85" stop-color="#5f3b1d"/>
+      <stop offset="0.98" stop-color="#46240d"/>
+      <stop offset="1" stop-color="#42210b"/>
+    </radialGradient>
+    <radialGradient id="e" cx="30.13" cy="89.83" r="17.99" gradientTransform="matrix(-1, 0, 0, 1, 103.97, 0)" xlink:href="#d"/>
+    <radialGradient id="f" cx="49.64" cy="76.82" r="37.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0071bc"/>
+      <stop offset="0.36" stop-color="#026fba"/>
+      <stop offset="0.57" stop-color="#0866b5"/>
+      <stop offset="0.74" stop-color="#1258ac"/>
+      <stop offset="0.89" stop-color="#20459f"/>
+      <stop offset="1" stop-color="#2e3192"/>
+    </radialGradient>
+    <radialGradient id="g" cx="49.78" cy="51.97" r="26.23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.35" stop-color="#fdfdfd"/>
+      <stop offset="0.55" stop-color="#f4f4f4"/>
+      <stop offset="0.72" stop-color="#e6e6e6"/>
+      <stop offset="0.86" stop-color="#d3d3d3"/>
+      <stop offset="0.99" stop-color="#b9b9b9"/>
+      <stop offset="1" stop-color="#b7b7b7"/>
+    </radialGradient>
+    <radialGradient id="h" cx="49.96" cy="9.56" r="26.23" xlink:href="#g"/>
+    <radialGradient id="i" cx="51.49" cy="-148.92" r="26.32" gradientTransform="translate(0 149.79) scale(1 0.71)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.32" stop-color="#f6fafc"/>
+      <stop offset="0.84" stop-color="#deecf3"/>
+      <stop offset="1" stop-color="#d5e7f0"/>
+    </radialGradient>
+    <radialGradient id="j" cx="50.15" cy="-20.39" r="12.95" gradientTransform="translate(4.31 79.03) rotate(-3.8)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#878787"/>
+      <stop offset="0.22" stop-color="#7e7e7e"/>
+      <stop offset="0.58" stop-color="#666"/>
+      <stop offset="1" stop-color="#424242"/>
+    </radialGradient>
+    <clipPath id="k">
+      <path d="M31.25,32l14.5,8.13s-4.7,3-12.54.61S31.25,32,31.25,32Zm41.85,0-14.5,8.13s4.7,3,12.54.61S73.11,32,73.11,32Z" style="fill: none"/>
+    </clipPath>
+    <radialGradient id="l" cx="15.97" cy="68.33" r="9.6" gradientTransform="translate(-4.44 -14.88) scale(1.19 1.19)" xlink:href="#b"/>
+  </defs>
+  <title>creatures</title>
+  <g style="isolation: isolate">
+    <g>
+      <ellipse cx="51.98" cy="91.74" rx="36.83" ry="6.26" style="opacity: 0.2;mix-blend-mode: multiply;fill: url(#a)"/>
+      <g>
+        <path d="M52.47,4a34.6,34.6,0,0,0-34.6,34.6V84.81c6.2-.25,16.37,0,22.8,0H64c6.43,0,16.76-.1,23.11,0V38.6A34.59,34.59,0,0,0,52.47,4Z" style="opacity: 0.8;fill: url(#b)"/>
+        <path d="M52.47,4a34.6,34.6,0,0,0-34.6,34.6V84.81c6.2-.25,16.37,0,22.8,0H64c6.43,0,16.76-.1,23.11,0V38.6A34.59,34.59,0,0,0,52.47,4Z" style="opacity: 0.8;mix-blend-mode: multiply;fill: url(#c)"/>
+      </g>
+      <path d="M15.16,93.74A35.94,35.94,0,0,0,27,95.25c6.75-.25,16.25-1.51,16.25-1.51l5.25-3V86.81l-28.25-.56S12.81,88.49,15.16,93.74Z" style="fill: url(#d)"/>
+      <path d="M88.81,93.74A35.94,35.94,0,0,1,77,95.25c-6.75-.25-16.25-1.51-16.25-1.51l-5.25-3V86.81l28.25-.56S91.15,88.49,88.81,93.74Z" style="fill: url(#e)"/>
+      <polygon points="16.75 71 17.88 86.81 51.17 86.81 52.82 84.81 54 86.81 87.07 86.82 88.81 70.25 16.75 71" style="fill: url(#f)"/>
+    </g>
+    <g>
+      <path d="M62,48s9-2,11,0a28.77,28.77,0,0,1,4,6l-4-1,3,5s1,6,0,5-5-2-5-2,3,4,3,6-7-2-7-2l-2,4-5-3v3s-4-1-4-3-3.82,2.22-3.82,2.22S48,64,48,66s-4,3-4,3V64.61L39,69l-2-4s-7,4-7,2,3-6,3-6-4,1-5,2,0-5,0-5l3-5-4,1a28.77,28.77,0,0,1,4-6c2-2,11,0,11,0l8.79,3.58Z" style="fill: url(#g)"/>
+      <path d="M62.18,5.59s9-2,11,0a28.77,28.77,0,0,1,4,6l-4-1,3,5s1,6,0,5-5-2-5-2,3,4,3,6-7-2-7-2l-2,4-5-3v3s-4-1-4-3-3.82,2.22-3.82,2.22-4.18-4.22-4.18-2.22-4,3-4,3V22.2l-5,4.39-2-4s-7,4-7,2,3-6,3-6-4,1-5,2,0-5,0-5l3-5-4,1a28.77,28.77,0,0,1,4-6c2-2,11,0,11,0L51,9.17Z" style="fill: url(#h)"/>
+      <polygon points="54 55.36 61.07 52.41 61.63 55.88 54 57.65 54 55.36" style="fill: #fff"/>
+      <path d="M58.61,40.15s4.15,4.14,12.88,1.35,1.83-9.23,1.83-9.23Z" style="fill: #ccc"/>
+      <path d="M45.68,40.15S41.54,44.29,32.8,41.5,31,32.26,31,32.26Z" style="fill: #ccc"/>
+      <path d="M31.25,32l14.5,8.13s-4.7,3-12.54.61S31.25,32,31.25,32Zm41.85,0-14.5,8.13s4.7,3,12.54.61S73.11,32,73.11,32Z" style="fill: url(#i)"/>
+      <g>
+        <path d="M55.56,60.21l.06.91s14.38.06,14.82-9.54Z" style="fill: #ccc"/>
+        <path d="M35.3,54.43s-2.18,8.77,20.31,6.68L55.56,60s-14.68-.26-17-3.92S35.3,54.43,35.3,54.43Z" style="fill: #ccc"/>
+        <path d="M36.17,52.38c-2.8,1.61.6,9.08,15,8.13l4.43-.29s8.15,0,11.63-3.45,3.87-5.76,2.35-6.65c-3.14-1.85-5.14.16-8.94,2.37-.12.07.68,3.22.56,3.29s-2.13.41-2.24.47-.06-2.75-.19-2.68l-.82.42c-.1,0,.2,2.33.1,2.37a3.77,3.77,0,0,1-.57.16c-.1,0-.29-1.13-.37-1.11a8.13,8.13,0,0,0-.43,1.35c-.13.06-2.18.4-2.31.46l.08-1.94C39.52,58.86,39,50.76,36.17,52.38Z" style="fill: url(#j)"/>
+      </g>
+      <g style="clip-path: url(#k)">
+        <path d="M38,32.46A4.06,4.06,0,1,1,34,36.51,4.06,4.06,0,0,1,38,32.46Zm27.49,0a4.06,4.06,0,1,0,4.06,4.06A4.06,4.06,0,0,0,65.52,32.46Z"/>
+      </g>
+      <circle cx="15.16" cy="70.25" r="7.34" style="fill: url(#l)"/>
+    </g>
+  </g>
+</svg>
