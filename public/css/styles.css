@@ -54,6 +54,7 @@ h4 {
 .scroll {
   overflow: auto;
   font-family: serif;
+  letter-spacing: 1px;
   font-size: 22px;
   border:2px solid #ccc;
   width:750px;
