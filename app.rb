@@ -26,10 +26,18 @@ end
 
 get('/room/:id') do
   @current_room = Room.find(params[:id].to_i)
+
   @exits = []
   @current_room.exits.each do |frog|
     @exits.push(frog.nsew)
   end
+
+  @creatures = []
+  unless Creature.find_by(room_id: @current_room.id) == nil
+    @creature_lookup = Creature.find_by(room_id: @current_room.id)
+    @creature_lookup.each {|creature| @creatures.push(creature)}
+  end
+
   @room_items = Artifact.where(:room_id => params[:id].to_i)
   Event.create({:room_id => @current_room.id, :entry => @current_room.description})
   if @room_items == nil
@@ -62,6 +70,12 @@ post('/room/:id') do
   @exits = []
   @current_room.exits.each do |frog|
     @exits.push(frog.nsew)
+  end
+
+  @creatures = []
+  unless Creature.find_by(room_id: @current_room.id) == nil
+    @creature_lookup = Creature.find_by(room_id: @current_room.id)
+    @creatures.push(@creature_lookup)
   end
 
   @room_items = Artifact.where(:room_id => params[:id].to_i)
