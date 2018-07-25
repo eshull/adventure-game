@@ -14,7 +14,7 @@
   <% if @events == nil %>
   <% else %>
     <% @events.last(6).each do |list| %>
-      -<%= list.entry %><br>
+      <%= list.entry %><br>
     <% end %>
   <% end %>
 </div>

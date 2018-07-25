@@ -12,8 +12,7 @@
     <linearGradient id="d" x1="269.96" y1="133.11" x2="259.39" y2="77.41" xlink:href="#a"/>
     <linearGradient id="e" x1="327.08" y1="141.67" x2="252.33" y2="133.8" xlink:href="#a"/>
     <radialGradient id="f" cx="274.06" cy="111.47" r="2.97" xlink:href="#c"/>
-    <linearGradient id="g" x1="805.67" y1="595.51" x2="809.78" y2="611.66" gradientTransform="translate(82.43 -761.52) rotate(31.6)" xlink:href="#c"/>
-    <radialGradient id="h" cx="807.33" cy="606.71" r="3.31" gradientTransform="translate(82.43 -761.52) rotate(31.6)" xlink:href="#c"/>
+    <linearGradient id="g" x1="160.48" y1="206.77" x2="129.82" y2="125.77" gradientTransform="matrix(-1, 0, 0, 1, 600.76, 0)" xlink:href="#a"/>
   </defs>
   <title>room</title>
   <g style="isolation: isolate">
@@ -98,29 +97,27 @@
       <polygon points="179.5 140.5 421.15 140.71 424.23 150.02 176.85 150.02 179.5 140.5" style="opacity: 0.2;mix-blend-mode: multiply;fill: url(#b)"/>
     </g>
     <g>
-      <polygon points="53.5 254.5 125.5 334.5 179.5 140.5 421.5 140.5 475.5 334.5 547.5 254.5 454.5 54.5 146.5 54.5 53.5 254.5" style="fill: #8cc63f"/>
+      <polygon points="53.5 254.5 125.5 334.5 179.5 140.5 421.5 140.5 475.5 334.5 547.5 254.5 454.5 54.5 146.5 54.5 53.5 254.5" style="fill: #998675"/>
       <polygon points="454.94 54.66 146.28 54.66 178.97 140.71 422.25 140.71 454.94 54.66" style="opacity: 0.3;mix-blend-mode: multiply"/>
       <polygon points="125.5 334.5 53.5 254.5 145.5 54.5 179.5 140.5 125.5 334.5" style="opacity: 0.5;mix-blend-mode: multiply"/>
       <polygon points="475.5 334.5 547.5 254.5 455.5 54.5 421.5 140.5 475.5 334.5" style="opacity: 0.1;mix-blend-mode: multiply"/>
-      <polygon points="53.5 254.5 547.5 254.5 475.5 334.5 125.5 334.5 53.5 254.5" style="fill: #8cc63f;opacity: 0.3"/>
+      <polygon points="53.5 254.5 547.5 254.5 475.5 334.5 125.5 334.5 53.5 254.5" style="fill: #998675;opacity: 0.3"/>
     </g>
     <g>
       <polygon points="265.82 140.71 260.21 71 340.79 71 335.2 140.68 265.82 140.71" style="fill: #754c24"/>
       <polygon points="277.42 118 271.48 118 270.48 107.83 277.42 107.83 277.42 118" style="fill: url(#c)"/>
-      <polygon points="467.5 122.5 486.58 170.61 451.51 239.51 438.42 193 467.5 122.5" style="fill: #8c6239"/>
       <polygon points="365.03 261.56 235.97 261.56 252.61 334.7 348.39 334.7 365.03 261.56" style="fill: #754c24"/>
       <polygon points="336.48 77 335.4 78 265.24 77.64 264.54 77 264.5 77 269.49 138.67 270.39 137.68 330 137 331.51 138.65 336.5 77 336.48 77" style="fill: none"/>
       <polygon points="336.5 75 331.51 136.65 335.2 140.68 340.84 71 340.79 71 336.48 75 336.5 75" style="fill: #ccc;mix-blend-mode: multiply"/>
       <polygon points="264.5 75 264.54 75 260.21 71 260.16 71 265.8 140.71 265.82 140.71 269.49 136.67 264.5 75" style="opacity: 0.7000000000000001;mix-blend-mode: multiply;fill: url(#d)"/>
       <polygon points="335.2 140.68 331.51 136.65 331.51 136.71 269.49 136.71 269.49 136.67 265.82 140.71 335.2 140.71 335.2 140.68" style="opacity: 0.5;mix-blend-mode: multiply;fill: url(#e)"/>
       <polygon points="336.48 75 340.79 71 260.21 71 264.54 75 336.48 75" style="fill: #4d4d4d;mix-blend-mode: multiply"/>
-      <polygon points="437.39 195.5 439.13 195.5 468.14 132.32 486.58 170.61 469.89 128.52 467.5 122.5 437.39 195.5" style="fill: #999;mix-blend-mode: multiply"/>
       <polygon points="238.08 255.67 235.97 261.56 365.03 261.56 363.06 255.67 238.08 255.67" style="fill: #a67c52"/>
       <circle cx="274.67" cy="112.5" r="2.75" style="fill: #999;opacity: 0.5;mix-blend-mode: multiply"/>
       <circle cx="274.23" cy="112.16" r="2.75" style="fill: url(#f)"/>
-      <polygon points="451.26 187.62 448.69 183.04 452.9 173.69 456.5 178.77 451.26 187.62" style="fill: url(#g)"/>
-      <path d="M454.88,181.84a2.93,2.93,0,1,1-5-2.94,3.29,3.29,0,0,1,3.91-1.5A3,3,0,0,1,454.88,181.84Z" style="fill: #999;opacity: 0.5;mix-blend-mode: multiply"/>
-      <path d="M454.37,180.39a3.09,3.09,0,0,1-4.42,1.19,3,3,0,0,1-.46-3.94,3.28,3.28,0,0,1,3.82-1.53C454.86,176.72,455.43,178.67,454.37,180.39Z" style="fill: url(#h)"/>
+      <polygon points="449.76 242 472.54 197.56 437.16 195.5 436.26 195.5 449.76 242" style="fill: #999;mix-blend-mode: multiply"/>
+      <path d="M437.16,195.5,456.35,149a11.57,11.57,0,0,1,15.53-6.13A11.33,11.33,0,0,0,466,149l-19.2,46.55Z" style="mix-blend-mode: multiply;fill: url(#g)"/>
+      <path d="M466,149a11.33,11.33,0,0,1,5.87-6.13,11.33,11.33,0,0,1,5.93,6.28l6.61,16.66a11.57,11.57,0,0,1-.44,9.52l-26.77,52.59L446.82,195.5Z"/>
     </g>
   </g>
 </svg>

@@ -11,10 +11,12 @@ class Artifact < ActiveRecord::Base
         if @inspect_item.purpose == current_room.title
           if current_room.title == 'Cluttered Hallway'
             current_room.exits << Exit.find_or_create_by(nsew: 'east')
-            Event.create({:entry => 'The troll takes the coin happily and wanders off.'})
+            Event.create({:entry => ' !! HOORAY! The troll takes the coin happily and wanders off.'})
+            troll = Creature.find_by(room_id: current_room.id)
+            troll.update(:room_id => nil)
           elsif current_room.title == 'Bedroom'
             current_room.exits << Exit.find_or_create_by(nsew: 'west')
-            Event.create({:entry => 'The door is now unlocked.'})
+            Event.create({:entry => ' !! The door is now unlocked.'})
           end
         end
       end
@@ -31,7 +33,7 @@ class Artifact < ActiveRecord::Base
         if @inspect_item.unlock.include?(word1) && current_room.id == @inspect_item.room_id
           @update_item = Artifact.find_by(name: @inspect_item.purpose)
           @update_item.update(:hidden => false)
-          Event.create({:entry => 'You discover a ' + @update_item.name + '!'})
+          Event.create({:entry => ' !! You discover a ' + @update_item.name + '!'})
         end
       end
     end
@@ -46,7 +48,7 @@ class Artifact < ActiveRecord::Base
       if @inspect_item == nil
       else
         @inspect_item.update(:room_id => @user.id)
-        Event.create({:entry => 'You pick up the ' + @inspect_item.name + '!'})
+        Event.create({:entry => ' !! You pick up the ' + @inspect_item.name + '!'})
       end
     end
   end

@@ -101,6 +101,11 @@
       <polygon points="179.5 140.5 421.15 140.71 424.23 150.02 176.85 150.02 179.5 140.5" style="opacity: 0.2;mix-blend-mode: multiply;fill: url(#b)"/>
     </g>
     <g>
+      <g>
+        <polygon points="401.97 177.2 197.49 177.2 178.79 283.87 426.25 283.87 401.97 177.2" style="fill: #93278f;fill-rule: evenodd"/>
+        <polygon points="394.67 184.77 205.19 184.77 191.25 273.13 413.23 273.13 394.67 184.77" style="fill: #f6a0b3;fill-rule: evenodd"/>
+        <polygon points="404.93 263.67 200.19 263.67 210.73 191.07 390.45 191.07 404.93 263.67" style="fill: #e44398;fill-rule: evenodd"/>
+      </g>
       <polygon points="53.5 254.5 125.5 334.5 179.5 140.5 421.5 140.5 475.5 334.5 547.5 254.5 454.5 54.5 146.5 54.5 53.5 254.5" style="fill: #f6a0b3"/>
       <polygon points="454.94 54.66 146.28 54.66 178.97 140.71 422.25 140.71 454.94 54.66" style="opacity: 0.3;mix-blend-mode: multiply"/>
       <polygon points="125.5 334.5 53.5 254.5 145.5 54.5 179.5 140.5 125.5 334.5" style="opacity: 0.5;mix-blend-mode: multiply"/>

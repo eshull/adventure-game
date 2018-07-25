@@ -69,40 +69,11 @@ post('/room/:id') do
       Artifact.unhide(@current_room, @player_move)
       Artifact.unlock_door(@current_room, @player_move)
       Artifact.pick_up(@current_room, @player_move)
-      Creature.turn(@current_room, @player_move)
+      Creature.talking(@current_room, @player_move)
+      Creature.interacting(@current_room, @player_move)
     elsif @player_move.length > 2
-      Event.create({:room_id => @current_room.id, :entry => "All commands are 1 or 2 words, use 'commands' to see a list of examples."})
+      Event.create({:room_id => @current_room.id, :entry => " % All commands are 1 or 2 words, use 'commands' to see a list of examples."})
     end
   end
-  @exits = []
-  @current_room.exits.each do |frog|
-    @exits.push(frog.nsew)
-  end
-
-  @creatures = []
-  unless Creature.find_by(room_id: @current_room.id) == nil
-    @creature_lookup = Creature.find_by(room_id: @current_room.id)
-    @creatures.push(@creature_lookup)
-    Creature.present(@current_room)
-  end
-
-  @room_items = Artifact.where(:room_id => params[:id].to_i)
-  Event.create({:room_id => @current_room.id, :entry => @current_room.description})
-
-  if @room_items == nil
-  else
-    @room_items.each do |display|
-      if display.hidden == false
-          Event.create({:room_id => @current_room.id, :entry => "!! You see a #{display.name} here"})
-      end
-    end
-  end
-
-  if @exits.length == 1
-    Event.create({:room_id => @current_room.id, :entry => " - Exit is to the #{@exits[0]}"})
-  else
-    Event.create({:room_id => @current_room.id, :entry => " - Exits are to the #{@exits.join(', ')}"})
-  end
-  @events = Event.all()
-  erb(:room)
+  redirect "/room/#{@current_room.id}"
 end

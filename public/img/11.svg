@@ -5,6 +5,18 @@
       <stop offset="1"/>
     </linearGradient>
     <linearGradient id="b" x1="300.54" y1="148.67" x2="300.54" y2="142" xlink:href="#a"/>
+    <linearGradient id="c" x1="243.27" y1="209.86" x2="357.14" y2="209.86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6e6e6"/>
+      <stop offset="1" stop-color="#4d4d4d"/>
+    </linearGradient>
+    <radialGradient id="d" cx="322" cy="198.5" r="58.48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#333"/>
+      <stop offset="1" stop-color="#e6e6e6"/>
+    </radialGradient>
+    <linearGradient id="e" x1="268" y1="180.99" x2="298.55" y2="180.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#e6e6e6"/>
+    </linearGradient>
   </defs>
   <title>room</title>
   <g style="isolation: isolate">
@@ -98,6 +110,34 @@
     <g>
       <polygon points="365.03 261.56 235.97 261.56 252.61 334.7 348.39 334.7 365.03 261.56" style="fill: #754c24"/>
       <polygon points="238.08 255.67 235.97 261.56 365.03 261.56 363.06 255.67 238.08 255.67" style="fill: #a67c52"/>
+    </g>
+    <g>
+      <ellipse cx="309.1" cy="212" rx="66.4" ry="35.75" style="fill: #4d4d4d;opacity: 0.4;mix-blend-mode: multiply"/>
+      <path d="M357.14,181H243.27v30c0,15.32,25.49,27.73,56.93,27.73s56.93-12.42,56.93-27.73c0-.34,0-.67-.05-1h.05Z" style="stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px;fill: url(#c)"/>
+      <ellipse cx="300.2" cy="180.99" rx="56.93" ry="27.73" style="fill: #ccc;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <ellipse cx="300.2" cy="180.99" rx="32.81" ry="15.99" style="stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px;fill: url(#d)"/>
+      <path d="M356.93,196.13c0,15.32-25.49,27.73-56.93,27.73s-56.73-10-56.73-25.37" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <path d="M270.75,188c5-5.74,15.65-9.73,29.25-9.73,13.37,0,24.87,3.9,30,9.48" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <path d="M281.42,194.09a58.77,58.77,0,0,1,19.14-3,59.72,59.72,0,0,1,18.09,2.65" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="278.54 181.99 278.54 168.99 258.11 162.32" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="244.17" y1="176.06" x2="268.32" y2="177.2" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="289.52 153.75 294.11 165.28 294.11 178.27" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="322.5 155.46 313.27 166.33 313.27 179.27" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="349.8 167.37 329.02 173.34 329.02 188.64" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="304.27" y1="178.41" x2="304.27" y2="191.09" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="287.02" y1="179.58" x2="287.02" y2="192.52" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="321.04" y1="181.99" x2="321.04" y2="193.34" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="333.02" y1="180.99" x2="356.96" y2="183.15" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="325.63 191.09 346.71 196.98 346.71 211.98" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="310.74 196.13 314.82 207.8 314.82 222.92" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="284.03 194.9 273.74 205.55 273.74 221.25" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="272.51 189.56 252.5 196.13 252.5 212.96" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="262.51" y1="218" x2="262.51" y2="231.78" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="247.53" y1="208.73" x2="247.53" y2="221.92" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="295.75" y1="223.87" x2="295.75" y2="238.65" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="333.02" y1="218.73" x2="333.02" y2="233.66" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="352.43" y1="206.96" x2="352.43" y2="222.05" style="fill: none;stroke: #4d4d4d;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <ellipse cx="300.2" cy="180.99" rx="32.81" ry="15.99" style="opacity: 0.8;mix-blend-mode: multiply;fill: url(#e)"/>
     </g>
   </g>
 </svg>

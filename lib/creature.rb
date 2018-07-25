@@ -1,12 +1,6 @@
 class Creature < ActiveRecord::Base
   belongs_to :rooms
 
-  def self.turn(current_room, user_input)
-    Creature.talking(current_room, user_input)
-    Creature.interacting(current_room, user_input)
-  end
-
-
   def self.talking(current_room, user_input)
     word1 = user_input[0]
     word2 = user_input[1]
@@ -15,7 +9,6 @@ class Creature < ActiveRecord::Base
       if @creature == nil
       else
         if @creature == 'Grandpa'
-          binding.pry
           Event.create({:entry => 'Grandpa says: Have you seen my shoe? It looks like this one.'})
           Event.create({:entry => 'Grandpa then points at a tea kettle. He stares at you for a moment longer, and then wanders off.'})
           @creature.update(room_id => nil)
@@ -31,8 +24,8 @@ class Creature < ActiveRecord::Base
   end
 
   def self.interacting(current_room, user_input)
-    word1 = user_input[0]
-    word2 = user_input[1]
+    word1 = user_input[0].downcase
+    word2 = user_input[1].downcase
     if ["hit", "hug", "attack", "punch", "kick"].include?(word1)
       @creature = Creature.find_by(room_id: current_room.id)
       if @creature == nil
@@ -46,13 +39,20 @@ class Creature < ActiveRecord::Base
         end
       end
     end
+    if ["look"].include?(word1)
+      @creature = Creature.find_by(room_id: current_room.id)
+      if @creature == nil
+      else
+        Event.create({:entry => @creature.description})
+      end
+    end
   end
 
   def self.present(current_room)
     is_creature = Creature.find_by(room_id: current_room.id)
     if is_creature == nil
     else
-      Event.create({:entry => 'There is a ' + is_creature.name + ' here.'})
+      Event.create({:entry => '** There is a ' + is_creature.name.upcase + ' here. **'})
     end
   end
 
