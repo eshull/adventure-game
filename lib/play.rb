@@ -127,8 +127,8 @@ class Play  < ActiveRecord::Base
     troll_room_id_update = Room.find_by(title: 'Cluttered Hallway')
     grandpa_room_id_update = Room.find_by(title: 'Cave')
     ghost_room_id_update = Room.find_by(title: 'Kitchen')
-    Creature.create({:room_id => troll_room_id_update.id, :name => 'Troll', :image => 'troll.svg'})
-    Creature.create({:room_id => grandpa_room_id_update.id, :name => 'Grandpa', :image => 'grandpa.svg'})
-    Creature.create({:room_id => ghost_room_id_update.id, :name => 'Ghost', :image => 'ghost.svg'})
+    Creature.create({:room_id => troll_room_id_update.id, :description => 'A big green Troll is blocking the door to the east. It is playing with a pile of shiny objects.', :name => 'Troll', :image => 'troll.svg'})
+    Creature.create({:room_id => grandpa_room_id_update.id, :description => 'He is wearing a Worlds Best Grandpa shirt and hip waders, and he is carrying a bucket with a small frog inside.', :name => 'Grandpa', :image => 'grandpa.svg'})
+    Creature.create({:room_id => ghost_room_id_update.id, :description => 'The Ghost appears to be wearing a mummy costume. Mummy Ghost? Ghost Mummy? Perhaps she died at a Halloween party?', :name => 'Ghost', :image => 'ghost.svg'})
   end
 end

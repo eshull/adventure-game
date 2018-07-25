@@ -35,7 +35,8 @@ get('/room/:id') do
   @creatures = []
   unless Creature.find_by(room_id: @current_room.id) == nil
     @creature_lookup = Creature.find_by(room_id: @current_room.id)
-    @creature_lookup.each {|creature| @creatures.push(creature)}
+    @creatures.push(@creature_lookup)
+    Creature.present(@current_room)
   end
 
   @room_items = Artifact.where(:room_id => params[:id].to_i)
@@ -44,14 +45,14 @@ get('/room/:id') do
   else
     @room_items.each do |display|
       if display.hidden == false
-          Event.create({:room_id => @current_room.id, :entry => "you see a #{display.name} here"})
+          Event.create({:room_id => @current_room.id, :entry => "!! You see a #{display.name} here"})
       end
     end
   end
   if @exits.length == 1
-    Event.create({:room_id => @current_room.id, :entry => "Exit is to the #{@exits[0]}"})
+    Event.create({:room_id => @current_room.id, :entry => " - Exit is to the #{@exits[0]}"})
   else
-    Event.create({:room_id => @current_room.id, :entry => "Exits are to the #{@exits.join(', ')}"})
+    Event.create({:room_id => @current_room.id, :entry => " - Exits are to the #{@exits.join(', ')}"})
   end
   @events = Event.all()
   erb(:room)
@@ -62,10 +63,16 @@ post('/room/:id') do
   if params["player_move"] == nil
   else
     @player_move = params["player_move"].split(' ')
-    Artifact.unhide(@current_room, @player_move)
-    Artifact.unlock_door(@current_room, @player_move)
-    Artifact.pick_up(@current_room, @player_move)
-    Creature.turn(@current_room, @player_move)
+    if @player_move.length == 1
+      Player.oneword(@current_room, @player_move)
+    elsif @player_move.length == 2
+      Artifact.unhide(@current_room, @player_move)
+      Artifact.unlock_door(@current_room, @player_move)
+      Artifact.pick_up(@current_room, @player_move)
+      Creature.turn(@current_room, @player_move)
+    elsif @player_move.length > 2
+      Event.create({:room_id => @current_room.id, :entry => "All commands are 1 or 2 words, use 'commands' to see a list of examples."})
+    end
   end
   @exits = []
   @current_room.exits.each do |frog|
@@ -76,6 +83,7 @@ post('/room/:id') do
   unless Creature.find_by(room_id: @current_room.id) == nil
     @creature_lookup = Creature.find_by(room_id: @current_room.id)
     @creatures.push(@creature_lookup)
+    Creature.present(@current_room)
   end
 
   @room_items = Artifact.where(:room_id => params[:id].to_i)
@@ -85,15 +93,15 @@ post('/room/:id') do
   else
     @room_items.each do |display|
       if display.hidden == false
-          Event.create({:room_id => @current_room.id, :entry => "you see a #{display.name} here"})
+          Event.create({:room_id => @current_room.id, :entry => "!! You see a #{display.name} here"})
       end
     end
   end
 
   if @exits.length == 1
-    Event.create({:room_id => @current_room.id, :entry => "Exit is to the #{@exits[0]}"})
+    Event.create({:room_id => @current_room.id, :entry => " - Exit is to the #{@exits[0]}"})
   else
-    Event.create({:room_id => @current_room.id, :entry => "Exits are to the #{@exits.join(', ')}"})
+    Event.create({:room_id => @current_room.id, :entry => " - Exits are to the #{@exits.join(', ')}"})
   end
   @events = Event.all()
   erb(:room)
