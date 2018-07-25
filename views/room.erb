@@ -1,6 +1,10 @@
 <h1><%= @current_room.title %></h1>
 <p></p>
 <img src="/img/<%= @current_room.image %>" height="450px">
+<% if @creatures == [] %>
+<% else %>
+  <img src="/img/<%= @creatures.first.image %>" height="175px">
+<% end %>
 <p></p>
 <h4>Maze History</h4>
 <div class="scroll" style="height:420px;width:750px;border:1px solid #ccc;font:22px/28px Litana, Litana, Serif;overflow:auto;">

@@ -124,5 +124,11 @@ class Play  < ActiveRecord::Base
       room_object = Room.find_by(title: room_name)
       artifact.update(room_id: room_object.id )
     end
+    troll_room_id_update = Room.find_by(title: 'Cluttered Hallway')
+    oldman_room_id_update = Room.find_by(title: 'Cave')
+    ghost_room_id_update = Room.find_by(title: 'Kitchen')
+    Creature.create({:room_id => troll_room_id_update.id, :name => 'Troll', :image => 'troll.svg'})
+    Creature.create({:room_id => oldman_room_id_update.id, :name => 'Old Man', :image => 'oldman.svg'})
+    Creature.create({:room_id => ghost_room_id_update.id, :name => 'Ghost', :image => 'ghost.svg'})
   end
 end
