@@ -53,11 +53,11 @@ h4 {
 
 .scroll {
   overflow: auto;
-  font-family: "litania";
+  font-family: serif;
   font-size: 22px;
   border:2px solid #ccc;
   width:750px;
-  max-height: 440px;
+  height: 440px;
   position: sticky;
   bottom: 0px;
   padding: 20px;
