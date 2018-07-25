@@ -50,13 +50,19 @@ h4 {
   letter-spacing: 2px;
   color: white;
 }
+
 .scroll {
+  overflow: auto;
+  font-family: "litania";
+  font-size: 22px;
+  border:2px solid #ccc;
+  width:750px;
+  max-height: 440px;
   position: sticky;
   bottom: 0px;
   padding: 20px;
   background-color: black;
   color: white;
-  max-height: 320px;
 }
 
 

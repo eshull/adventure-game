@@ -1,7 +1,7 @@
 <h1><%= @current_room.title %></h1>
 <img src="/img/<%= @current_room.image %>" height="450px">
 <h4>Maze History</h4>
-<div class="scroll" style="height:420px;width:750px;border:1px solid #ccc;font:22px/28px Litana, Litana, Serif;overflow:auto;">
+<div class="scroll">
   <% if @events == nil %>
   <% else %>
     <% @events.last(6).each do |list| %>
