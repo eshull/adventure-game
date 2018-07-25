@@ -7,14 +7,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="<%= url("/styles.css")%>" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="/css/styles.css" type="text/css">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   </head>
   <body>
-    <audio src="/music/dark.mp3" controls autoplay loop hidden="true">
+    <!-- <audio src="/music/dark.mp3" controls autoplay loop hidden>
+    </audio> -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Large modal</button>
 
-    </audio>
-    <!-- <embed src="/public/music/dark.mp3" width="180" height="90" loop="true" type="audio/mpeg" autostart="true" hidden="true" /> -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+
     <div class="container">
 
+          ...
+        </div>
+      </div>
+    </div>
       <div class="row">
         <div class="col-md-1">
           <p> </p>

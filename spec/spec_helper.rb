@@ -2,17 +2,42 @@ ENV['RACK_ENV'] = 'test'
 require('rspec')
 require('pg')
 require('sinatra/activerecord')
-require('store')
-require('brand')
+require('artifact')
+require('creature')
+require('play')
+require('room')
+require('event')
+require('player')
 require('pry')
 
 RSpec.configure do |config|
   config.after(:each) do
-    Store.all.each do |store|
-      store.destroy()
+
+    Artifact.all.each do |artifact|
+      artifact.destroy()
     end
-    Brand.all.each do |brand|
-      brand.destroy()
+
+    Creature.all.each do |creature|
+      creature.destroy()
     end
+
+    Play.all.each do |play|
+      play.destroy()
+    end
+
+    Room.all.each do |room|
+      room.destroy()
+    end
+
+    Event.all.each do |event|
+      event.destroy()
+    end
+
+    Player.all.each do |player|
+      player.destroy()
+    end
+
+
+
   end
 end

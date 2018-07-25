@@ -1,9 +1,13 @@
 <h1><%= @current_room.title %></h1>
 <img src="/img/<%= @current_room.image %>" height="450px">
-<% if @creatures == [] %>
-<% else %>
-  <img src="/img/<%= @creatures.first.image %>" height="175px">
-<% end %>
+<audio src="/music/door-open.mp3" controls autoplay hidden>
+</audio>
+<div class="monster">
+  <% if @creatures == [] %>
+  <% else %>
+    <img id="monster" src="/img/<%= @creatures.first.image %>" height="175px">
+  <% end %>
+</div>
 <p></p>
 <h4>Maze History</h4>
 <div class="scroll">

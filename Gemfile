@@ -12,3 +12,4 @@ gem("sinatra")
 gem("sinatra-contrib", :require => "sinatra/reloader")
 gem("sinatra-activerecord")
 gem("rake", :require => "rake/rdoctask")
+gem 'bootstrap', '~> 4.1.3'
