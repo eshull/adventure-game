@@ -1,21 +1,34 @@
 body {
-  background-color: #1a0a38;
+  background-color: #170c2d;
 }
 
 .index {
   /* background-image: url("background.png"); */
-  background-image: url(../img/background.svg);
+  /*background-image: url(../img/background.svg);*/
+  background-image: url(../img/background.png);
   /* background-size: 920px, 520px; */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.bat {
+  position: fixed;
+  top: 30%;
+  left: 20%;
+}
 .start_game {
   position: fixed;
   right: 80px;
   bottom: 80px;
   width: 440px;
   display: inline-flex;
+}
+
+h1 {
+  color: white;
+  font-family: "litania";
+  letter-spacing: 2px;
+  font-size: 70px;
 }
 
 .start_game h3 {
@@ -35,27 +48,40 @@ h4 {
   margin: 15px;
   font-family: "litania";
   letter-spacing: 2px;
+  color: white;
 }
 .scroll {
+  position: sticky;
+  bottom: 0px;
   padding: 20px;
   background-color: black;
   color: white;
+  max-height: 320px;
 }
 
-.scroll p {
-  max-height: 300px;
+
+/*.scroll p {
+  max-height: 200px;
   overflow: scroll;
   font-family: serif;
   font-size: 20px;
   color: white;
   letter-spacing: 1px;
+  bottom: 5px;
+
+}*/
+.input_direction {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
 }
 
 .direction {
-  position: fixed;
-  right: 100px;
-  bottom: 85px;
-  width: 300px;
+  /*position: fixed;*/
+  /*right: 100px;
+  bottom: 85px;*/
+  width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,6 +127,7 @@ h6 {
 }
 
 input {
+  width: 200px;
   height: 36px;
 }
 

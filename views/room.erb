@@ -1,7 +1,5 @@
 <h1><%= @current_room.title %></h1>
-<p></p>
 <img src="/img/<%= @current_room.image %>" height="450px">
-<p></p>
 <h4>Maze History</h4>
 <div class="scroll" style="height:420px;width:750px;border:1px solid #ccc;font:22px/28px Litana, Litana, Serif;overflow:auto;">
   <% if @events == nil %>
@@ -11,43 +9,43 @@
     <% end %>
   <% end %>
 </div>
-<p></p>
-<div class="input">
-  <form action="/room/<%= @current_room.id %>" method="post">
-    <input type="text" name="player_move" value="">
-  <button type="submit"  name="button"><h6>Enter</h6></button>
-  </form>
-</div>
-<div class="direction">
-
-  <form action="/room/<%= (@current_room.id + 5) %>" method="post">
-    <% if @exits.include?('north') %>
-    <button type="submit" name="button"><h6>North</h6></button>
-    <% else %>
-    <button type="submit" name="button" disabled><h6>North</h6></button>
-    <% end %>
-  </form>
-  <div class="middle">
-    <form action="/room/<%= (@current_room.id - 1) %>" method="post">
-      <% if @exits.include?('west') %>
-      <button type="submit" name="button"><h6>West</h6></button>
+<div class="input_direction">
+  <div class="input">
+    <form action="/room/<%= @current_room.id %>" method="post">
+      <input type="text" name="player_move" value="">
+    <button type="submit"  name="button"><h6>Enter</h6></button>
+    </form>
+  </div>
+  <div class="direction">
+    <form action="/room/<%= (@current_room.id + 5) %>" method="post">
+      <% if @exits.include?('north') %>
+      <button type="submit" name="button"><h6>North</h6></button>
       <% else %>
-      <button type="submit" name="button" disabled><h6>West</h6></button>
+      <button type="submit" name="button" disabled><h6>North</h6></button>
       <% end %>
     </form>
-    <form action="/room/<%= (@current_room.id + 1) %>" method="post">
-      <% if @exits.include?('east') %>
-      <button type="submit" name="button"><h6>East</h6></button>
+    <div class="middle">
+      <form action="/room/<%= (@current_room.id - 1) %>" method="post">
+        <% if @exits.include?('west') %>
+        <button type="submit" name="button"><h6>West</h6></button>
+        <% else %>
+        <button type="submit" name="button" disabled><h6>West</h6></button>
+        <% end %>
+      </form>
+      <form action="/room/<%= (@current_room.id + 1) %>" method="post">
+        <% if @exits.include?('east') %>
+        <button type="submit" name="button"><h6>East</h6></button>
+        <% else %>
+        <button type="submit" name="button" disabled><h6>East</h6></button>
+        <% end %>
+      </form>
+    </div>
+    <form action="/room/<%= (@current_room.id - 5) %>" method="post">
+      <% if @exits.include?('south') %>
+      <button type="submit" name="button"><h6>South</h6></button>
       <% else %>
-      <button type="submit" name="button" disabled><h6>East</h6></button>
+      <button type="submit" name="button" disabled><h6>South</h6></button>
       <% end %>
     </form>
   </div>
-  <form action="/room/<%= (@current_room.id - 5) %>" method="post">
-    <% if @exits.include?('south') %>
-    <button type="submit" name="button"><h6>South</h6></button>
-    <% else %>
-    <button type="submit" name="button" disabled><h6>South</h6></button>
-    <% end %>
-  </form>
 </div>
