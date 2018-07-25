@@ -8,7 +8,7 @@ class Artifact < ActiveRecord::Base
       @inspect_item = Artifact.find_by(name: word2)
       if @inspect_item == nil
       else
-        if @inspect_item.purpose == current_room.title
+        if @inspect_item.purpose == 'penny' || @inspect_item.purpose == 'troll'
           if current_room.title == 'Cluttered Hallway'
             current_room.exits << Exit.find_or_create_by(nsew: 'east')
             Event.create({:entry => ' !! HOORAY! The troll takes the coin happily and wanders off.'})
@@ -30,10 +30,14 @@ class Artifact < ActiveRecord::Base
       @inspect_item = Artifact.find_by(name: word2)
       if @inspect_item == nil
       else
-        if @inspect_item.unlock.include?(word1) && current_room.id == @inspect_item.room_id
-          @update_item = Artifact.find_by(name: @inspect_item.purpose)
-          @update_item.update(:hidden => false)
-          Event.create({:entry => ' !! You discover a ' + @update_item.name + '!'})
+        if @inspect_item.obscures == true
+          if @inspect_item.unlock.include?(word1) && current_room.id == @inspect_item.room_id
+            @update_item = Artifact.find_by(name: @inspect_item.purpose)
+            @update_item.update(:hidden => false)
+            Event.create({:entry => ' !! You discover a ' + @update_item.name + '!'})
+          end
+        elsif @inspect_item.obscures == false
+          Event.create({:entry => ' # ' + @inspect_item.description})
         end
       end
     end
