@@ -16,6 +16,22 @@ get('/') do
   erb(:index)
 end
 
+get('/roof') do
+  erb(:roof)
+end
+
+post('/escape/:id') do
+  id = params[:id].to_i
+  if [1, 2, 4].include?(id)
+    erb(:victory)
+  else
+    Event.create({:entry => "You slip and fall to your doom. Sorry!"})
+    @event = Event.all.last
+    erb(:defeat)
+  end
+
+end
+
 get('/victory') do
   erb(:victory)
 end
@@ -73,6 +89,7 @@ post('/room/:id') do
       Artifact.unhide(@current_room, @player_move)
       Artifact.unlock_door(@current_room, @player_move)
       Artifact.pick_up(@current_room, @player_move)
+      Artifact.look_at(@current_room, @player_move)
       Creature.talking(@current_room, @player_move)
       Creature.interacting(@current_room, @player_move)
       drums = Artifact.find_by(name: 'drums')
@@ -83,5 +100,11 @@ post('/room/:id') do
       Event.create({:room_id => @current_room.id, :entry => " % All commands are 1 or 2 words, use 'commands' to see a list of examples."})
     end
   end
-  redirect "/room/#{@current_room.id}"
+  if @current_room.title == "Roof"
+    Event.create({:entry => @current_room.description})
+    @events = Event.all()
+    erb(:roof)
+  else
+    redirect "/room/#{@current_room.id}"
+  end
 end

@@ -30,11 +30,11 @@ class Creature < ActiveRecord::Base
       @creature = Creature.find_by(room_id: current_room.id)
       if @creature == nil
       else
-        if @creature == 'Grandpa'
+        if @creature.name == 'Grandpa'
           Event.create({:entry => 'Grandpa is not amused.'})
-        elsif @creature == 'Troll'
+        elsif @creature.name == 'Troll'
           Event.create({:entry => 'The Troll looks extremely strong. That is probably a bad idea.'})
-        elsif @creature == 'Ghost'
+        elsif @creature.name == 'Ghost'
           Event.create({:entry => 'As the ghost is non-corporeal, this seems silly. She stares at you as you embarrass yourself.'})
         end
       end

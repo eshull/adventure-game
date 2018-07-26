@@ -14,7 +14,13 @@
   <% if @events == nil %>
   <% else %>
     <% @events.last(6).each do |list| %>
-      <%= list.entry %><br>
+      <% if list.entry.include?('!!') %>
+        <i><%= list.entry %></i><br>
+      <% elsif list.entry.include?('#') %>
+          <u><%= list.entry %></u><br>
+      <% else %>
+        <%= list.entry %><br>
+      <% end %>
     <% end %>
   <% end %>
 </div>
