@@ -13,8 +13,15 @@ require("pg")
 require("pry")
 
 get('/') do
-  # @stores_list = Store.all
   erb(:index)
+end
+
+get('/victory') do
+  erb(:victory)
+end
+
+get('/defeat') do
+  erb(:defeat)
 end
 
 post ('/') do
@@ -26,19 +33,16 @@ end
 
 get('/room/:id') do
   @current_room = Room.find(params[:id].to_i)
-
   @exits = []
   @current_room.exits.each do |frog|
     @exits.push(frog.nsew)
   end
-
   @creatures = []
   unless Creature.find_by(room_id: @current_room.id) == nil
     @creature_lookup = Creature.find_by(room_id: @current_room.id)
     @creatures.push(@creature_lookup)
     Creature.present(@current_room)
   end
-
   @room_items = Artifact.where(:room_id => params[:id].to_i)
   Event.create({:room_id => @current_room.id, :entry => @current_room.description})
   if @room_items == nil
@@ -71,6 +75,10 @@ post('/room/:id') do
       Artifact.pick_up(@current_room, @player_move)
       Creature.talking(@current_room, @player_move)
       Creature.interacting(@current_room, @player_move)
+      drums = Artifact.find_by(name: 'drums')
+      if params["player_move"] == "touch drums" && drums.hidden == false
+        Event.create({:entry => "  !!! You hear Thad holler: Don't touch my drums! :O"})
+      end
     elsif @player_move.length > 2
       Event.create({:room_id => @current_room.id, :entry => " % All commands are 1 or 2 words, use 'commands' to see a list of examples."})
     end

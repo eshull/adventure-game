@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_25_192312) do
+ActiveRecord::Schema.define(version: 2018_07_26_055306) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,8 +51,6 @@ ActiveRecord::Schema.define(version: 2018_07_25_192312) do
     t.string "nsew"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "rooms_id"
-    t.index ["rooms_id"], name: "index_exits_on_rooms_id"
   end
 
   create_table "exits_rooms", id: false, force: :cascade do |t|
@@ -67,12 +65,9 @@ ActiveRecord::Schema.define(version: 2018_07_25_192312) do
     t.integer "ycoord"
     t.string "title"
     t.string "description"
-    t.string "items"
     t.string "image"
-    t.bigint "exits_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["exits_id"], name: "index_rooms_on_exits_id"
   end
 
 end
