@@ -50,7 +50,6 @@ class Artifact < ActiveRecord::Base
     word2 = user_input[1]
     if ["look"].include?(word1)
       inspect_item = Artifact.find_by(name: word2)
-      binding.pry
       if inspect_item == nil
       else
         Event.create({:entry => ' # ' + inspect_item.description})

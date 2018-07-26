@@ -1,10 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
   <defs>
-    <radialGradient id="a" cx="47.98" cy="91.74" r="35.39" gradientTransform="translate(0 78.28) scale(1 0.15)" gradientUnits="userSpaceOnUse">
-      <stop offset="0"/>
-      <stop offset="1" stop-opacity="0"/>
+    <radialGradient id="a" cx="2114.94" cy="24.18" r="31.51" gradientTransform="matrix(-1, 0, 0, 1.01, 2163.19, 0.12)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.08" stop-color="#f1f1f1"/>
+      <stop offset="0.23" stop-color="#ececec"/>
+      <stop offset="0.41" stop-color="#dcdcdc"/>
+      <stop offset="0.62" stop-color="#c2c2c2"/>
+      <stop offset="0.84" stop-color="#9e9e9e"/>
+      <stop offset="1" stop-color="gray"/>
     </radialGradient>
-    <radialGradient id="b" cx="44.45" cy="36.07" r="57.81" gradientUnits="userSpaceOnUse">
+    <radialGradient id="b" cx="2099.25" cy="38.45" r="51.67" xlink:href="#a"/>
+    <radialGradient id="c" cx="2099.12" cy="21.76" r="46.63" xlink:href="#a"/>
+    <radialGradient id="d" cx="2091.15" cy="23.61" r="36.12" xlink:href="#a"/>
+    <radialGradient id="e" cx="2101.54" cy="14.15" r="34.53" xlink:href="#a"/>
+    <radialGradient id="f" cx="2116.06" cy="15.64" r="32.61" xlink:href="#a"/>
+    <radialGradient id="g" cx="88.04" cy="-172.05" r="14.6" gradientTransform="matrix(0.98, -0.21, 0.22, 0.99, 44.43, 241.24)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.08" stop-color="#f1f1f1"/>
+      <stop offset="0.28" stop-color="#eee"/>
+      <stop offset="0.45" stop-color="#e3e3e3"/>
+      <stop offset="0.61" stop-color="#d1d1d1"/>
+      <stop offset="0.76" stop-color="#b8b8b8"/>
+      <stop offset="0.91" stop-color="#989898"/>
+      <stop offset="1" stop-color="gray"/>
+    </radialGradient>
+    <radialGradient id="h" cx="44.37" cy="35.11" r="57.65" gradientTransform="translate(0 0.12) scale(1 1.01)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff"/>
       <stop offset="0.35" stop-color="#fdfdfd"/>
       <stop offset="0.55" stop-color="#f4f4f4"/>
@@ -13,88 +31,59 @@
       <stop offset="0.99" stop-color="#b9b9b9"/>
       <stop offset="1" stop-color="#b7b7b7"/>
     </radialGradient>
-    <radialGradient id="c" cx="29.9" cy="39.8" r="52.13" xlink:href="#b"/>
-    <radialGradient id="d" cx="46.49" cy="-148.92" r="26.32" gradientTransform="translate(0 149.79) scale(1 0.71)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="i" cx="29.85" cy="38.83" r="51.99" xlink:href="#h"/>
+    <radialGradient id="j" cx="-84.5" cy="136.66" r="9.89" gradientTransform="translate(125.37 -113.6) scale(1 1.05)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#878787"/>
       <stop offset="0.22" stop-color="#7e7e7e"/>
       <stop offset="0.58" stop-color="#666"/>
       <stop offset="1" stop-color="#424242"/>
     </radialGradient>
-    <radialGradient id="e" cx="61.9" cy="61.48" r="29.5" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#d"/>
+    <radialGradient id="k" cx="-70.23" cy="135.3" r="9.88" gradientTransform="translate(125.37 -120.54) scale(1 1.11)" xlink:href="#j"/>
+    <radialGradient id="l" cx="46.62" cy="24.18" r="31.51" gradientTransform="translate(0 0.12) scale(1 1.01)" xlink:href="#a"/>
+    <radialGradient id="m" cx="30.93" cy="38.45" r="51.67" gradientTransform="translate(0 0.12) scale(1 1.01)" xlink:href="#a"/>
+    <radialGradient id="n" cx="30.8" cy="21.76" r="46.63" gradientTransform="translate(0 0.12) scale(1 1.01)" xlink:href="#a"/>
+    <radialGradient id="o" cx="22.83" cy="23.61" r="36.12" gradientTransform="translate(0 0.12) scale(1 1.01)" xlink:href="#a"/>
+    <radialGradient id="p" cx="33.22" cy="14.15" r="34.53" gradientTransform="translate(0 0.12) scale(1 1.01)" xlink:href="#a"/>
+    <radialGradient id="q" cx="47.74" cy="15.64" r="32.61" gradientTransform="translate(0 0.12) scale(1 1.01)" xlink:href="#a"/>
+    <radialGradient id="r" cx="928.71" cy="18.62" r="14.43" gradientTransform="translate(-2571.82 28.88) scale(2.82 1.3)" xlink:href="#j"/>
+    <radialGradient id="s" cx="47.98" cy="91.74" r="35.39" gradientTransform="translate(0 78.28) scale(1 0.15)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <title>creatures</title>
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c137 79.159547, 2016/07/07-11:39:24        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""
-            xmlns:dc="http://purl.org/dc/elements/1.1/"
-            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
-            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
-            xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#">
-         <dc:title>
-            <rdf:Alt>
-               <rdf:li xml:lang="x-default">creatures</rdf:li>
-            </rdf:Alt>
-         </dc:title>
-         <xmp:Rating>1</xmp:Rating>
-         <xmp:MetadataDate>2018-07-25T10:57:38-07:00</xmp:MetadataDate>
-         <xmpMM:InstanceID>xmp.iid:0e9facb3-be88-4af1-a009-bcd267f29ab8</xmpMM:InstanceID>
-         <xmpMM:DocumentID>xmp.did:0e9facb3-be88-4af1-a009-bcd267f29ab8</xmpMM:DocumentID>
-         <xmpMM:OriginalDocumentID>xmp.did:0e9facb3-be88-4af1-a009-bcd267f29ab8</xmpMM:OriginalDocumentID>
-         <xmpMM:History>
-            <rdf:Seq>
-               <rdf:li>
-                  <rdf:Description>
-                     <stEvt:action>saved</stEvt:action>
-                     <stEvt:instanceID>xmp.iid:0e9facb3-be88-4af1-a009-bcd267f29ab8</stEvt:instanceID>
-                     <stEvt:when>2018-07-25T10:57:38-07:00</stEvt:when>
-                     <stEvt:softwareAgent>Adobe Bridge CC 2017 (Macintosh)</stEvt:softwareAgent>
-                     <stEvt:changed>/metadata</stEvt:changed>
-                  </rdf:Description>
-               </rdf:li>
-            </rdf:Seq>
-         </xmpMM:History>
-      </rdf:Description>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<g style="isolation: isolate">
+  <title>mummy_ghost</title>
+  <g style="isolation: isolate">
     <g>
-      <ellipse cx="47.98" cy="91.74" rx="36.83" ry="6.26" style="opacity: 0.2;mix-blend-mode: multiply;fill: url(#a)"/>
       <g>
-        <path d="M47.47,4a34.6,34.6,0,0,0-34.6,34.6V84.81A11.63,11.63,0,0,0,24,73.19a11.64,11.64,0,0,0,23.28,0,11.64,11.64,0,0,0,23.28,0A11.63,11.63,0,0,0,82.07,84.82V38.6A34.59,34.59,0,0,0,47.47,4Z" style="opacity: 0.8;fill: url(#b)"/>
-        <path d="M47.47,4a34.6,34.6,0,0,0-34.6,34.6V84.81A11.63,11.63,0,0,0,24,73.19a11.64,11.64,0,0,0,23.28,0,11.64,11.64,0,0,0,23.28,0A11.63,11.63,0,0,0,82.07,84.82V38.6A34.59,34.59,0,0,0,47.47,4Z" style="opacity: 0.8;mix-blend-mode: multiply;fill: url(#c)"/>
-      </g>
-      <g>
-        <path d="M53.61,40.15s4.15,4.14,12.88,1.35,1.83-9.23,1.83-9.23Z" style="fill: #ccc"/>
+        <path d="M57.75,4.85s.49,12.66-17.9,18.82-25.56,4.54-25.56,4.54A8.7,8.7,0,0,0,13,34.37,73,73,0,0,0,42.73,29.1c16.67-7,18.58-12.68,20.62-22.29A5.14,5.14,0,0,0,57.75,4.85Z" style="fill: url(#a)"/>
+        <path d="M61.59,42.31a102.65,102.65,0,0,0,19.76-1.68s1-4.61.52-6C77.8,36,36.68,46.1,17.31,20.54l-1.92,3.6C27.73,40.42,46.34,42.31,61.59,42.31Z" style="fill: url(#b)"/>
+        <path d="M81.62,30.82a39.25,39.25,0,0,0-1.12-5.31l.69,2.7-.69-2.7A110.93,110.93,0,0,1,40.08,3.6S35.37,5.3,34,6C34.91,12.63,79.27,31.71,81.62,30.82Z" style="fill: url(#c)"/>
+        <path d="M81.28,28.73,80.65,26h0l-.91-2.89c-.18,0-15.83-2-22.82-16.2L53,7.37C61.31,24.24,80.43,28.62,81.28,28.73Z" style="fill: url(#d)"/>
+        <path d="M33.76,22.78c19.52,0,34.88-7.43,37.73-9.69A30.54,30.54,0,0,0,66.67,9c-.25.15-22.79,14.06-46,6.56,0,0-3.74,4.3-3.52,5.42S28.46,22.78,33.76,22.78Z" style="fill: url(#e)"/>
+        <path d="M14.29,27.86c17-.94,30.54-4.57,37.66-10.42A17.17,17.17,0,0,0,57.9,4.82L53.64,3.6c0,.13-1.26,17.17-37.76,18.64Z" style="fill: url(#f)"/>
+        <path d="M82.2,35.88S84.3,52.55,90,53.25A7.44,7.44,0,0,1,85.86,57s-3.31,2.58-10-20.94S82.2,35.88,82.2,35.88Z" style="fill: url(#g)"/>
         <g>
-          <path d="M40.68,40.15S36.54,44.29,27.8,41.5,26,32.26,26,32.26Z" style="fill: #ccc"/>
-          <path d="M26.25,32l14.5,8.13s-4.7,3-12.54.61S26.25,32,26.25,32Zm41.85,0-14.5,8.13s4.7,3,12.54.61S68.11,32,68.11,32Z" style="fill: url(#d)"/>
+          <path d="M47.38,3.28a34.67,34.67,0,0,0-34.5,34.83V84.63A11.66,11.66,0,0,0,24,72.94a11.61,11.61,0,1,0,23.22,0,11.61,11.61,0,1,0,23.22,0A11.66,11.66,0,0,0,81.88,84.65V38.11A34.67,34.67,0,0,0,47.38,3.28Z" style="opacity: 0.8;fill: url(#h)"/>
+          <path d="M47.38,3.28a34.67,34.67,0,0,0-34.5,34.83V84.63A11.66,11.66,0,0,0,24,72.94a11.61,11.61,0,1,0,23.22,0,11.61,11.61,0,1,0,23.22,0A11.66,11.66,0,0,0,81.88,84.65V38.11A34.67,34.67,0,0,0,47.38,3.28Z" style="opacity: 0.8;mix-blend-mode: multiply;fill: url(#i)"/>
+        </g>
+        <g>
+          <path d="M42.23,26.5c0,2.89-2.89,5.24-6.46,5.24S29.3,29.39,29.3,26.5s1.64-4,5.21-4S42.23,23.61,42.23,26.5Z" style="fill: #ccc"/>
+          <path d="M42.23,25.77c0,2.49-2.89,4.5-6.46,4.5s-6.46-2-6.46-4.5-.68-4.5,2.89-4.5S42.23,23.28,42.23,25.77Z" style="fill: url(#j)"/>
+          <path d="M65.69,26.5c0,2.89-2.89,5.24-6.46,5.24s-6.46-2.34-6.46-5.24,3.67-2.9,7.24-2.9S65.69,23.61,65.69,26.5Z" style="fill: #ccc"/>
+          <path d="M65.69,25.77c0,2.49-2.89,4.5-6.46,4.5s-6.46-2-6.46-4.5,6.35-4.5,9.92-4.5S65.69,23.28,65.69,25.77Z" style="fill: url(#k)"/>
+        </g>
+        <path d="M37.11,4.85S36.63,17.51,55,23.67s25.56,4.54,25.56,4.54a8.7,8.7,0,0,1,1.31,6.16A73,73,0,0,1,52.14,29.1c-16.67-7-18.58-12.68-20.62-22.29A5.14,5.14,0,0,1,37.11,4.85Z" style="fill: url(#l)"/>
+        <path d="M33.27,42.31a102.66,102.66,0,0,1-19.76-1.68s-1-4.61-.52-6C17.07,36,58.19,46.1,77.55,20.54l1.92,3.6C67.14,40.42,48.53,42.31,33.27,42.31Z" style="fill: url(#m)"/>
+        <path d="M13.25,30.82a39.24,39.24,0,0,1,1.12-5.31l-.69,2.7.69-2.7A110.93,110.93,0,0,0,54.79,3.6S59.5,5.3,60.85,6C60,12.63,15.6,31.71,13.25,30.82Z" style="fill: url(#n)"/>
+        <path d="M13.58,28.73,14.21,26h0l.91-2.89c.18,0,15.83-2,22.82-16.2l3.9.43C33.56,24.24,14.44,28.62,13.58,28.73Z" style="fill: url(#o)"/>
+        <path d="M61.1,22.78c-19.52,0-34.88-7.43-37.73-9.69A30.53,30.53,0,0,1,28.2,9c.26.15,22.79,14.06,46,6.56,0,0,3.74,4.3,3.52,5.42S66.4,22.78,61.1,22.78Z" style="fill: url(#p)"/>
+        <path d="M80.57,27.86c-17-.94-30.54-4.57-37.66-10.42A17.17,17.17,0,0,1,37,4.82L41.23,3.6c0,.13,1.26,17.17,37.76,18.64Z" style="fill: url(#q)"/>
+        <g>
+          <path d="M65.73,45.34c0,5.37-8.15,9.73-18.21,9.73S29.3,50.71,29.3,45.34s8.15-1.52,18.22-1.52S65.73,40,65.73,45.34Z" style="fill: #ccc"/>
+          <path d="M65.73,44c0,4.62-8.15,8.37-18.21,8.37S29.3,48.6,29.3,44s8.15-1.09,18.22-1.09S65.73,39.36,65.73,44Z" style="fill: url(#r)"/>
         </g>
       </g>
-      <path d="M67.13,47.35l-4.39.17.15,3.8-4.12.23-.21-3.87-16.05.61-.19,4.16-4.62-.1-.1-3.88-2.33.09v4.13L30.4,53,30,48.75l-4.24.16s2.12,3.41,4.13,6.83H67.13Z" style="fill: url(#e)"/>
-      <polygon points="29.86 55.74 25.73 48.91 29.86 58.27 67.13 58.27 67.13 55.74 29.86 55.74" style="fill: #b3b3b3"/>
+      <ellipse cx="47.98" cy="91.74" rx="36.83" ry="6.26" style="opacity: 0.2;mix-blend-mode: multiply;fill: url(#s)"/>
     </g>
   </g>
 </svg>
